@@ -1,0 +1,64 @@
+footer {
+    height: 12vh;
+    width: 100%;
+    background-color: #000;
+
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 100%;
+    grid-template-areas: "footer__sideB footer__main footer__sideA";
+    border-top: #ffffff solid 5px;
+    padding: 1%;
+    display: grid;
+    .footer__sideA {
+        height: 100%;
+        grid-area: footer__sideA;
+        .footer__sideA--ul {
+            list-style: none;
+            text-align: right;
+            .footer__link {
+                @include font(consola, 0.8em, bolder, #5a5a5a);
+            }
+            .footer__link:hover {
+                cursor: pointer;
+                @include font(consola, 0.8em, bolder, #ffffff);
+            }
+        }
+    }
+    .footer__main {
+        grid-area: footer__main;
+        height: 100%;
+        @include flex(column, flex-start);
+
+        .footer__tittle {
+            height: 20%;
+            @include font(PersonalUse, 1em, bolder, #5a5a5a);
+        }
+        .footer_contact {
+            @include flex(row, space-between);
+            width: 100%;
+            height: 15%;
+            margin-top: 5%;
+            .footer_contact--img {
+                @include flex(column, flex-start);
+
+                width: 25%;
+                height: 100%;
+                transform: scale(0.25);
+            }
+        }
+    }
+    .footer__sideB {
+        height: 100%;
+        grid-area: footer__sideB;
+
+        position: relative;
+        .footer__sideB-imgA {
+            height: 85%;
+            width: 100%;
+            @include flex(column, center);
+            .footer__sideB-img {
+                transform: scale(0.3);
+            }
+        }
+    }
+}

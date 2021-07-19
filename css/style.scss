@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+      overflow-x: hidden;
+  }
+/* V A R I A B L E S */
+:root {
+    --colorPrimary: #000;
+    --colorSecondary: #ffffff;
+}
+
+/* F O N T S */
+@font-face {
+    font-family: "PersonalUse";
+    src: url("../css/Fuentes/Patron\ -\ PersonalUse.otf");
+}
+
+@font-face {
+    font-family: "consola";
+    src: url("../css/Fuentes/CONSOLA.TTF");
+}
+
+/* M I X I N */
+@mixin flex($direction, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: center;
+}
+@mixin animation($name, $time, $direction, $infinite, $delay) {
+    animation-name: $name;
+    animation-duration: $time;
+    animation-iteration-count: $infinite;
+    animation-direction: $direction;
+    animation-delay: $delay;
+}
+@mixin font($name, $size, $weight, $color) {
+    font-family: $name;
+    font-size: $size;
+    font-weight: $weight;
+    text-decoration: none;
+    color: $color;
+}
+
+/* G L O B A L  S T R U C T U R E */
+
+a,
+ul,
+li {
+    list-style: none;
+    text-decoration: none;
+    font-family: "consola";
+}
+section {
+    height: 100vh;
+    width: 100%;
+    @include flex(column, center);
+}
+nav {
+    h2{
+        @include animation(glitchText, 5s, alternate, infinite, 0);
+    }
+    /*background-color: gainsboro;*/
+    height: 10%;
+    width: 95%;
+    @include flex(row, space-between);
+    .menu--img {
+        width: 50%;
+    }
+}
+main {
+    /*background-color: indianred;*/
+    height: 60%;
+    width: 100%;
+    @include flex(row, center);
+}
+.contFooter {
+    height: 15%;}
+.contFooter__comnbo {
+    @include flex(row, space-between);
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    display: none;
+}
+.contFooter__comnbo a {
+    @include flex(row, center);
+    .contFooter__comnbo--img {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+@import "contA";
+@import "contB";
+@import "contC";
+@import "contD";
+@import "Footer";
+@import "animaciones";

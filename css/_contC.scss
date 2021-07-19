@@ -1,0 +1,38 @@
+.contC {
+   background-image: url("../images/home/tverror5.jpg");
+   background-size: cover;
+   background-attachment: fixed;
+   @include font(PersonalUse, 1.2em, normal, var(--colorSecondary));
+   
+   .contDisplay {
+      width: 80%;
+      height: 75%;
+      background-color: var(--colorPrimary);
+      border: var(--colorSecondary) solid 5px;
+      border-radius: 10px;
+      @include animation(glitchBox, 2s, alternate, infinite, 0);
+   }
+   .contFooter {
+      height: 23%;
+
+      .contFooter__comnbo {
+         flex-wrap: wrap;
+         @include flex(row, space-between);
+         width: 100%;
+         height: 100%;
+         margin: 0 auto;
+      }
+      .contFooter__comnbo a {
+         width: 50%;
+         height: 50%;
+         @include flex(row, center);
+         .contFooter__comnbo--img {
+            width: 90%;
+            margin: 0 auto;
+         }.contFooter__comnbo--img:hover {
+            width: 90%;
+            @include animation(backgroundTV2, 1s, alternate, infinite, 0);
+         }
+      }
+   }
+}

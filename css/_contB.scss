@@ -1,0 +1,46 @@
+.contB {
+    background-size: cover;
+    background-image: url("../images/home/tv2.gif");
+    @include font(PersonalUse, 1em, bolder, var(--colorPrimary));
+    .buttonOrganizer {
+        height: 9%;
+        width: 100%;
+        background-color: var(--colorPrimary);
+        @include flex(column, space-around);
+        .buttonCombo {
+            width: 95%;
+            flex-wrap: wrap;
+            @include flex(row, space-around);
+        }
+        .buttonCombo--style {
+            width: 50%;
+            height: 50%;
+            border: none;
+            background-color: var(--colorPrimary);
+            @include font(PersonalUse, 0.8em, normal, var(--colorSecondary));
+        }
+        .buttonCombo--styleSelected {
+            background-color: var(--colorSecondary);
+            width: 50%;
+            transform: scale(1.1);
+            border: var(--colorPrimary) solid 3px;
+            border-radius: 4px;
+            @include font(PersonalUse, 0.8em, bolder, var(--colorPrimary));
+            @include animation(glitchBox, 3s, alternate, infinite, 0);
+        }
+    }
+    .contDisplay {
+        width: 80%;
+        height: 75%;
+        background-color: var(--colorSecondary);
+        border: var(--colorPrimary) solid 5px;
+        border-radius: 10px;
+        padding: 2%;
+        text-align: justify;
+        @include font(consola, 0.8em, bolder, var(--colorPrimary));
+        @include animation(glitchBox, 3s, alternate, infinite, 0);
+        .contDisplay--Article {
+            display: none;
+        }
+    }
+}
