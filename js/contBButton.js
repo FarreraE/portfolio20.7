@@ -78,8 +78,10 @@ function blackBg() {
 
 
 menuSU.addEventListener("click", function () { menuDisplay() });
+menuSUP.addEventListener("click", function () { menuDisplay() });
 //homeMenu2.addEventListener("click", function () { menuDisplayP() });
 
+ menuTV.addEventListener("click", function () { menuHide() });
 
 function menuDisplay() {
     document.getElementById("contA").style.display = "none";
@@ -87,8 +89,16 @@ function menuDisplay() {
     document.getElementById("contC").style.display = "none";
     document.getElementById("contD").style.display = "flex";
     document.getElementById("footer").style.display = "none";
+    document.getElementById("html").style.scrollBehavior = "none"
+}
+function menuHide() {
+    document.getElementById("contA").style.display = "flex";
+    document.getElementById("contB").style.display = "flex";
+    document.getElementById("contC").style.display = "flex";
+    document.getElementById("contD").style.display = "none";
+    document.getElementById("footer").style.display = "flex";
+
+    setTimeout(function () { document.getElementById("html").style.scrollBehavior = "smooth"; }, 500);
     
-
-
 }
 
