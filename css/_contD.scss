@@ -2,7 +2,7 @@
     background-color:#0000cd;
     padding: 5%;
     @include flex(column, center);
-    /*display: none;*/
+    display: none;
     .menuImg{
         transform: scale(1.0);
         opacity: 0.8;
