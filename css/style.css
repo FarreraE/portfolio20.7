@@ -342,10 +342,10 @@ main {
   background-color: var(--colorSecondary);
   border: var(--colorPrimary) solid 5px;
   border-radius: 10px;
-  padding: 2%;
+  padding: 3%;
   text-align: justify;
   font-family: consola;
-  font-size: 0.8em;
+  font-size: 0.85em;
   font-weight: bolder;
   text-decoration: none;
   color: var(--colorPrimary);
@@ -379,9 +379,11 @@ main {
 .contC .contDisplay {
   width: 80%;
   height: 75%;
-  background-color: var(--colorPrimary);
   border: var(--colorSecondary) solid 5px;
   border-radius: 10px;
+  background-image: url("../images/home/ufo.gif");
+  background-size: 85%;
+  background-attachment: fixed;
   -webkit-animation-name: glitchBox;
           animation-name: glitchBox;
   -webkit-animation-duration: 2s;

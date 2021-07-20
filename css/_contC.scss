@@ -7,9 +7,11 @@
    .contDisplay {
       width: 80%;
       height: 75%;
-      background-color: var(--colorPrimary);
       border: var(--colorSecondary) solid 5px;
       border-radius: 10px;
+      background-image: url("../images/home/ufo.gif");
+      background-size:85%;
+      background-attachment: fixed;
       @include animation(glitchBox, 2s, alternate, infinite, 0);
    }
    .contFooter {

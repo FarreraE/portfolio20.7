@@ -1,18 +1,16 @@
-//var contactHome = document.getElementById("home__ul--linkContact");
-
-
+var contactHome = document.getElementById("contlinkABtn");
+var contactMenu = document.getElementById("contactMenu");
 var buttonCombo1 = document.getElementById("buttonCombo1");
 var buttonCombo2 = document.getElementById("buttonCombo2");
 var buttonCombo3 = document.getElementById("buttonCombo3");
 var buttonCombo4 = document.getElementById("buttonCombo4");
-//var homeMenu = document.getElementById("menu__NavBTN");
-//var homeMenu2 = document.getElementById("menu__NavBTNP");
 
-//contactHome.addEventListener("click", function () { btnSwitch(3) });
 buttonCombo1.addEventListener("click", function () { btnSwitch(0) });
 buttonCombo2.addEventListener("click", function () { btnSwitch(1) });
 buttonCombo3.addEventListener("click", function () { btnSwitch(2) });
 buttonCombo4.addEventListener("click", function () { btnSwitch(3) });
+contactHome.addEventListener("click", function () { btnSwitch(3) });
+contactMenu.addEventListener("click", function () { btnSwitch(3) });
 
 buttonCombo1.className = "buttonCombo--styleSelected";
 document.getElementById("contB__contDisplay1").style.display = "block";
@@ -96,6 +94,6 @@ function menuHide() {
     document.getElementById("contB").style.display = "flex";
     document.getElementById("contC").style.display = "flex";
     document.getElementById("contD").style.display = "none";
-    document.getElementById("footer").style.display = "flex";
+    document.getElementById("footer").style.display = "grid";
 }
 
