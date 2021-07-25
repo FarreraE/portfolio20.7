@@ -1,0 +1,520 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "lemon";
+  src: url("../Fuentes/LEMONMILK-Regular.otf");
+}
+
+@font-face {
+  font-family: "patron";
+  src: url("../Fuentes/Patron - PersonalUse.otf");
+}
+
+body {
+  background-color: #5d5c5c;
+  padding: 0.8%;
+}
+
+.backgroundBody {
+  background-color: #262525;
+}
+
+h1 {
+  color: #f2f2f2;
+  opacity: 0.4;
+  font-family: "lemon", cursive;
+  text-align: center;
+  margin-top: 2%;
+}
+
+h2 {
+  color: #f2f2f2;
+}
+
+h3 {
+  color: #f2f2f2;
+  font-family: "lemon", cursive;
+  font-size: 1.6em;
+  font-weight: bold;
+  text-align: center;
+}
+
+h4 {
+  color: #f2f2f2;
+  font-family: "lemon", cursive;
+  font-size: 1.4em;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0.5;
+}
+
+h5 {
+  color: #f2f2f2;
+  font-family: "patron", cursive;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0.2;
+}
+
+header .header__colA .header__logo {
+  margin-top: 10%;
+  opacity: 0.3;
+}
+
+header .header__colB {
+  font-size: 0.8em;
+  color: #f2f2f2;
+  opacity: 0.4;
+  text-align: right;
+  margin-top: 5%;
+}
+
+header .nav {
+  font-family: "lemon", cursive;
+}
+
+header .nav .nav-link {
+  color: #f2f2f2;
+  opacity: 0.4;
+  font-size: 0.9em;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+}
+
+header .nav .nav-link:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.desLogLink {
+  margin-top: 5%;
+}
+
+.desLogLink .desLogLink__colA .desLogLink__title {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.desLogLink .desLogLink__colA .pComent {
+  font-size: 1em;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.desLogLink .desLogLink__colB {
+  margin-top: 10%;
+}
+
+.desLogLink .linkToSite {
+  margin-top: 8%;
+}
+
+.desLogLink .linkToSite .pLinkP .pLinkPA {
+  font-size: 1.1em;
+  opacity: 0.5;
+}
+
+.desLogLink .linkToSite .pLinkP .pLinkPA:hover {
+  opacity: 1;
+}
+
+.releaseTools .desLogLink__colA {
+  margin-top: 5%;
+}
+
+.releaseTools .desLogLink__colB {
+  margin-top: 5%;
+}
+
+.releaseTools .desLogLink__colB .releaseTools__img {
+  width: 40%;
+  opacity: 0.4;
+}
+
+.carousel {
+  margin-top: 10%;
+}
+
+.carousel .ciP {
+  width: 100%;
+  height: 50vh;
+}
+
+.misionVision {
+  margin-top: 5%;
+}
+
+.misionVision .misionVision__colA {
+  padding: 5%;
+  margin-top: 8%;
+}
+
+.misionVision .misionVision__colA .misionVisionP {
+  font-size: 1.3em;
+}
+
+.misionVision .misionVision__colB {
+  margin-top: 5%;
+  padding: 5%;
+}
+
+.misionVision .misionVision__colB .misionVisionP {
+  font-size: 1.3em;
+}
+
+.footer {
+  margin-top: 8%;
+}
+
+.footer .footerA .footer__logo {
+  width: 40%;
+  opacity: 0.2;
+  margin-bottom: 2%;
+}
+
+.footer .footerB .footer_contact--img {
+  width: 15%;
+  margin-top: 2%;
+  opacity: 0.5;
+}
+
+.footer .footerB .footer_contact--img:hover {
+  opacity: 1;
+}
+
+.footer .footerC .nav-link {
+  margin-top: 8%;
+  color: #f2f2f2;
+  opacity: 0.4;
+  font-size: 1em;
+  font-family: "patron", cursive;
+}
+
+.footer .footerC .nav-link:hover {
+  opacity: 1;
+}
+
+.line {
+  color: #5d5c5c;
+  background-color: #5d5c5c;
+}
+
+p {
+  color: #f2f2f2;
+}
+
+.codeVSChar {
+  color: #f2f2f2;
+  opacity: 0.5;
+  font-size: 0.8em;
+}
+
+.codeVSTag {
+  color: #24accd;
+  font-size: 0.8em;
+}
+
+.codeVSClass {
+  color: #80e0fd;
+  font-size: 0.8em;
+}
+
+.codeVSQoutes {
+  color: #ff7f00;
+  font-size: 1em;
+}
+
+.pComent {
+  color: #40a529;
+}
+
+a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+@media all and (min-width: 576px) {
+  h5 {
+    font-size: 2em;
+  }
+  .codeVSChar {
+    font-size: 1em;
+  }
+  .codeVSTag {
+    font-size: 1.1em;
+  }
+  .codeVSClass {
+    font-size: 1.1em;
+  }
+  .codeVSQoutes {
+    font-size: 1.2em;
+  }
+  body {
+    background-color: #5d5c5c;
+    padding: 0.5%;
+  }
+  header .header__colA .header__logo {
+    margin-top: 10%;
+    opacity: 0.3;
+  }
+  header .header__colB {
+    font-size: 1em;
+    margin-top: 5%;
+    padding: 5%;
+  }
+  header .nav {
+    font-family: "lemon", cursive;
+  }
+  header .nav .nav-link {
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    font-weight: 650;
+  }
+  .desLogLink .desLogLink__colA .desLogLink__title {
+    font-size: 2em;
+  }
+  .desLogLink .desLogLink__colA .pComent {
+    font-size: 1.2em;
+  }
+  .desLogLink .desLogLink__colB {
+    margin-top: 8%;
+  }
+  .desLogLink .desLogLink__colB .desLogLink__colB--logo {
+    width: 100%;
+  }
+  .desLogLink .linkToSite .pLinkP .pLinkPA {
+    font-size: 1.4em;
+  }
+  .releaseTools .desLogLink__colB {
+    margin-top: 5%;
+  }
+  .releaseTools .desLogLink__colB .releaseTools__img {
+    width: 22%;
+    opacity: 0.4;
+  }
+  .misionVision .misionVision__colA {
+    padding: 3%;
+    margin-top: 2%;
+  }
+  .misionVision .misionVision__colB {
+    margin-top: 0%;
+    padding: 3%;
+  }
+  .footer {
+    margin-top: 5%;
+  }
+  .footer .footerC .nav-link {
+    font-size: 1.4em;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .codeVSChar {
+    font-size: 1em;
+  }
+  .codeVSTag {
+    font-size: 1.1em;
+  }
+  .codeVSClass {
+    font-size: 1.1em;
+  }
+  .codeVSQoutes {
+    font-size: 1.2em;
+  }
+  body {
+    padding: 0.8%;
+    background-color: #262525;
+  }
+  header .header__colA .header__logo {
+    margin-top: 10%;
+    opacity: 0.3;
+  }
+  header .header__colB {
+    font-size: 1.2em;
+    margin-top: 5%;
+    padding: 5%;
+  }
+  header .nav {
+    font-family: "lemon", cursive;
+  }
+  header .nav .nav-link {
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    font-weight: 650;
+  }
+  .desLogLink .desLogLink__colA .desLogLink__title {
+    font-size: 1.5em;
+  }
+  .desLogLink .desLogLink__colA .pComent {
+    font-size: 1em;
+  }
+  .desLogLink .desLogLink__colB .desLogLink__colB--logo {
+    margin-top: -15%;
+  }
+  .releaseTools .desLogLink__colA {
+    font-size: 1.5em;
+  }
+  .releaseTools .desLogLink__colB {
+    margin-top: 5%;
+  }
+  .releaseTools .desLogLink__colB .releaseTools__img {
+    width: 20%;
+    opacity: 0.4;
+  }
+  .footer {
+    margin-top: 0%;
+  }
+  .footer .footerA .footer__logo {
+    margin-top: 10%;
+    width: 100%;
+    margin-bottom: 0%;
+  }
+  .footer .footerC {
+    margin-top: 1%;
+  }
+  .footer .footerC .nav-link {
+    margin-top: -5%;
+    font-size: 1.2em;
+  }
+}
+
+@media all and (min-width: 992px) {
+  h5 {
+    font-size: 2em;
+  }
+  .codeVSChar {
+    font-size: 1em;
+  }
+  .codeVSTag {
+    font-size: 1.1em;
+  }
+  .codeVSClass {
+    font-size: 1.1em;
+  }
+  .codeVSQoutes {
+    font-size: 1.2em;
+  }
+  header .header__colA .header__logo {
+    margin-top: 20%;
+    opacity: 0.3;
+  }
+  header .header__colB {
+    font-size: 1.2em;
+    margin-top: 5%;
+    padding: 5%;
+  }
+  header .nav {
+    font-family: "lemon", cursive;
+  }
+  header .nav .nav-link {
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    font-weight: 650;
+  }
+  .desLogLink .desLogLink__colA .desLogLink__title {
+    font-size: 1.5em;
+  }
+  .desLogLink .desLogLink__colA .pComent {
+    font-size: 1em;
+  }
+  .desLogLink .desLogLink__colB .desLogLink__colB--logo {
+    margin-top: -15%;
+  }
+  .releaseTools .desLogLink__colA {
+    font-size: 1.5em;
+  }
+  .releaseTools .desLogLink__colB {
+    margin-top: 5%;
+  }
+  .releaseTools .desLogLink__colB .releaseTools__img {
+    width: 20%;
+    opacity: 0.4;
+  }
+  .footer {
+    margin-top: 5%;
+  }
+  .footer .footerA .footer__logo {
+    margin-top: 10%;
+    width: 100%;
+    margin-bottom: 0%;
+  }
+  .footer .footerC {
+    margin-top: 1%;
+  }
+  .footer .footerC .nav-link {
+    margin-top: -5%;
+    font-size: 1.2em;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .codeVSChar {
+    font-size: 1.2em;
+  }
+  .codeVSTag {
+    font-size: 1.2em;
+  }
+  .codeVSClass {
+    font-size: 1.5em;
+  }
+  .codeVSQoutes {
+    font-size: 1.8em;
+  }
+  header .header__colA .header__logo {
+    margin-top: 20%;
+    opacity: 0.3;
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  header .header__colB {
+    font-size: 1.5em;
+    margin-top: 5%;
+    padding: 5%;
+  }
+  header .nav {
+    font-family: "lemon", cursive;
+  }
+  header .nav .nav-link {
+    font-size: 1.4em;
+    letter-spacing: 0.2em;
+  }
+  .desLogLink .desLogLink__colA .desLogLink__title {
+    font-size: 2.3em;
+  }
+  .desLogLink .desLogLink__colA .pComent {
+    font-size: 1.5em;
+  }
+  .desLogLink .desLogLink__colB .desLogLink__colB--logo {
+    margin-top: -15%;
+  }
+  .desLogLink .linkToSite .pLinkP .pLinkPA {
+    font-size: 2em;
+  }
+  .releaseTools .desLogLink__colA {
+    font-size: 2em;
+  }
+  .footer {
+    margin-top: 0%;
+  }
+  .footer .footerA .footer__logo {
+    margin-top: 10%;
+    width: 100%;
+    margin-bottom: 0%;
+  }
+  .footer .footerC {
+    margin-top: 1%;
+  }
+  .footer .footerC .nav-link {
+    margin-top: -5%;
+    font-size: 2em;
+  }
+}
+/*# sourceMappingURL=pages.css.map */

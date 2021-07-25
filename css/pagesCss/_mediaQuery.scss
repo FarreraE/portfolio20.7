@@ -1,0 +1,346 @@
+@media all and (min-width: 576px) {
+    h5 {
+        font-size: 2em;
+    }
+    .codeVSChar {
+        font-size: 1em;
+    }
+    .codeVSTag {
+        font-size: 1.1em;
+    }
+    .codeVSClass {
+        font-size: 1.1em;
+    }
+    .codeVSQoutes {
+        font-size: 1.2em;
+    }
+    body {
+        background-color: #5d5c5c;
+        padding: 0.5%;
+    }
+ 
+    header {
+        .header__colA {
+            .header__logo {
+                margin-top: 10%;
+                opacity: 0.3;
+            }
+        }
+        .header__colB {
+            font-size: 1em;
+            margin-top: 5%;
+            padding: 5%;
+        }
+        .nav {
+            font-family: "lemon", cursive;
+            .nav-link {
+                font-size: 1.2em;
+                letter-spacing: 0.1em;
+                font-weight: 650;
+            }
+        }
+    }
+
+    .desLogLink {
+        .desLogLink__colA {
+            .desLogLink__title {
+                font-size: 2em;
+            }
+            .pComent {
+                font-size: 1.2em;
+            }
+        }
+        .desLogLink__colB {
+            margin-top: 8%;
+            .desLogLink__colB--logo {
+                width: 100%;
+            }
+        }
+        .linkToSite {
+            .pLinkP {
+                .pLinkPA {
+                    font-size: 1.4em;
+                }
+            }
+        }
+    }
+    .releaseTools {
+        .desLogLink__colB {
+            margin-top: 5%;
+
+            .releaseTools__img {
+                width: 22%;
+                opacity: 0.4;
+            }
+        }
+    }
+    .misionVision {
+        .misionVision__colA {
+            padding: 3%;
+            margin-top: 2%;
+        }
+        .misionVision__colB {
+            margin-top: 0%;
+            padding: 3%;
+        }
+    }
+    .footer {
+        margin-top: 5%;
+        .footerC {
+            .nav-link {
+                font-size: 1.4em;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 768px) {
+    .codeVSChar {
+        font-size: 1em;
+    }
+    .codeVSTag {
+        font-size: 1.1em;
+    }
+    .codeVSClass {
+        font-size: 1.1em;
+    }
+    .codeVSQoutes {
+        font-size: 1.2em;
+    }
+    body {
+        padding: 0.8%;
+        background-color: #262525;
+        
+    }
+    header {
+        .header__colA {
+            .header__logo {
+                margin-top: 10%;
+                opacity: 0.3;
+            }
+        }
+        .header__colB {
+            font-size: 1.2em;
+            margin-top: 5%;
+            padding: 5%;
+        }
+        .nav {
+            font-family: "lemon", cursive;
+            .nav-link {
+                font-size: 1.2em;
+                letter-spacing: 0.1em;
+                font-weight: 650;
+            }
+        }
+    }
+
+    .desLogLink {
+        .desLogLink__colA {
+            .desLogLink__title {
+                font-size: 1.5em;
+            }
+            .pComent {
+                font-size: 1em;
+            }
+        }
+        .desLogLink__colB {
+            .desLogLink__colB--logo {
+                margin-top: -15%;
+            }
+        }
+    }   .releaseTools {
+        .desLogLink__colA {
+            font-size: 1.5em;
+        }
+        .desLogLink__colB {
+            margin-top: 5%;
+            .releaseTools__img {
+                width: 20%;
+                opacity: 0.4;
+            }
+        }
+    }
+    
+    .footer {
+        margin-top: 0%;
+        .footerA {
+            .footer__logo {
+                margin-top: 10%;
+                width: 100%;
+                margin-bottom: 0%;
+            }
+        }
+        .footerC {
+            margin-top: 1%;
+            .nav-link {
+                margin-top: -5%;
+                font-size: 1.2em;
+            }
+        }
+    }
+}
+@media all and (min-width: 992px) {
+    h5 {
+        font-size: 2em;
+    }
+    .codeVSChar {
+        font-size: 1em;
+    }
+    .codeVSTag {
+        font-size: 1.1em;
+    }
+    .codeVSClass {
+        font-size: 1.1em;
+    }
+    .codeVSQoutes {
+        font-size: 1.2em;
+    }
+    header {
+        .header__colA {
+            .header__logo {
+                margin-top: 20%;
+                opacity: 0.3;
+            }
+        }
+        .header__colB {
+            font-size: 1.2em;
+            margin-top: 5%;
+            padding: 5%;
+        }
+        .nav {
+            font-family: "lemon", cursive;
+            .nav-link {
+                font-size: 1.2em;
+                letter-spacing: 0.1em;
+                font-weight: 650;
+            }
+        }
+    }
+
+    .desLogLink {
+        .desLogLink__colA {
+            .desLogLink__title {
+                font-size: 1.5em;
+            }
+            .pComent {
+                font-size: 1em;
+            }
+        }
+        .desLogLink__colB {
+            .desLogLink__colB--logo {
+                margin-top: -15%;
+            }
+        }
+    }   .releaseTools {
+        .desLogLink__colA {
+            font-size: 1.5em;
+        }
+        .desLogLink__colB {
+            margin-top: 5%;
+            .releaseTools__img {
+                width: 20%;
+                opacity: 0.4;
+            }
+        }
+    }
+    
+    .footer {
+        margin-top: 5%;
+        .footerA {
+            .footer__logo {
+                margin-top: 10%;
+                width: 100%;
+                margin-bottom: 0%;
+            }
+        }
+        .footerC {
+            margin-top: 1%;
+            .nav-link {
+                margin-top: -5%;
+                font-size: 1.2em;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .codeVSChar {
+        font-size: 1.2em;
+    }
+    .codeVSTag {
+        font-size: 1.2em;
+    }
+    .codeVSClass {
+        font-size: 1.5em;
+    }
+    .codeVSQoutes {
+        font-size: 1.8em;
+    }
+  
+    header {
+        .header__colA {
+            .header__logo {
+                margin-top: 20%;
+                opacity: 0.3;
+                transform: scale(1.3);
+            }
+        }
+        .header__colB {
+            font-size: 1.5em;
+            margin-top: 5%;
+            padding: 5%;
+        }
+        .nav {
+            font-family: "lemon", cursive;
+            .nav-link {
+                font-size: 1.4em;
+                letter-spacing: 0.2em
+            }
+        }
+    }
+
+    .desLogLink {
+        .desLogLink__colA {
+            .desLogLink__title {
+                font-size: 2.3em;
+            }
+            .pComent {
+                font-size: 1.5em;
+            }
+        }
+        .desLogLink__colB {
+            .desLogLink__colB--logo {
+                margin-top: -15%;
+            }
+        }  .linkToSite {
+            .pLinkP {
+                .pLinkPA {
+                    font-size: 2em;
+                }
+            }
+        }
+    }
+    .releaseTools {
+        .desLogLink__colA {
+            font-size: 2em;
+        }
+
+    }
+    .footer {
+        margin-top: 0%;
+        .footerA {
+            .footer__logo {
+                margin-top: 10%;
+                width: 100%;
+                margin-bottom: 0%;
+            }
+        }
+        .footerC {
+            margin-top: 1%;
+            .nav-link {
+                margin-top: -5%;
+                font-size: 2em;
+            }
+        }
+    }
+}

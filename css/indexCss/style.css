@@ -19,12 +19,12 @@ html {
 /* F O N T S */
 @font-face {
   font-family: "PersonalUse";
-  src: url("../css/Fuentes/Patron - PersonalUse.otf");
+  src: url("../Fuentes/Patron - PersonalUse.otf");
 }
 
 @font-face {
   font-family: "consola";
-  src: url("../css/Fuentes/CONSOLA.TTF");
+  src: url("../Fuentes/CONSOLA.TTF");
 }
 
 /* M I X I N */
@@ -168,7 +168,7 @@ main {
           animation-direction: alternate;
   -webkit-animation-delay: 0;
           animation-delay: 0;
-  background-image: url("../images/home/tverror3.jpg");
+  background-image: url("../../images/home/tverror3.jpg");
 }
 
 .contA .contA__image {
@@ -183,8 +183,6 @@ main {
 }
 
 .contA .home__ul {
-  width: 100%;
-  height: 25%;
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -366,7 +364,7 @@ main {
 }
 
 .contC {
-  background-image: url("../images/home/tverror5.jpg");
+  background-image: url("../../images/home/tverror5.jpg");
   background-size: cover;
   background-attachment: fixed;
   font-family: PersonalUse;
@@ -381,7 +379,7 @@ main {
   height: 75%;
   border: var(--colorSecondary) solid 5px;
   border-radius: 10px;
-  background-image: url("../images/home/ufo.gif");
+  background-image: url("../../images/home/ufo.gif");
   background-size: 85%;
   background-attachment: fixed;
   -webkit-animation-name: glitchBox;
@@ -398,6 +396,7 @@ main {
 
 .contC .contFooter {
   height: 23%;
+  display: none;
 }
 
 .contC .contFooter .contFooter__comnbo {
@@ -560,146 +559,42 @@ main {
 }
 
 footer {
-  height: 12vh;
-  width: 100%;
-  background-color: #000;
-  -ms-grid-columns: 20% 60% 20%;
-      grid-template-columns: 20% 60% 20%;
-  -ms-grid-rows: 100%;
-      grid-template-rows: 100%;
-      grid-template-areas: "footer__sideB footer__main footer__sideA";
-  border-top: #ffffff solid 5px;
-  padding: 1%;
-  display: -ms-grid;
-  display: grid;
+  margin-top: 8%;
+  background-color: black;
+  border-top: #f2f2f2 solid 5px;
+  font-family: "PersonalUse", cursive;
 }
 
-footer .footer__sideA {
-  height: 100%;
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: footer__sideA;
-}
-
-footer .footer__sideA .footer__sideA--ul {
-  list-style: none;
-  text-align: right;
-}
-
-footer .footer__sideA .footer__sideA--ul .footer__link {
-  font-family: consola;
-  font-size: 0.8em;
-  font-weight: bolder;
-  text-decoration: none;
-  color: #5a5a5a;
-}
-
-footer .footer__sideA .footer__sideA--ul .footer__link:hover {
-  cursor: pointer;
-  font-family: consola;
-  font-size: 0.8em;
-  font-weight: bolder;
-  text-decoration: none;
-  color: #ffffff;
-}
-
-footer .footer__main {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: footer__main;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-footer .footer__main .footer__tittle {
-  height: 20%;
-  font-family: PersonalUse;
-  font-size: 1em;
-  font-weight: bolder;
-  text-decoration: none;
-  color: #5a5a5a;
-}
-
-footer .footer__main .footer_contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: 15%;
+footer .footerA {
   margin-top: 5%;
 }
 
-footer .footer__main .footer_contact .footer_contact--img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 25%;
-  height: 100%;
-  -webkit-transform: scale(0.25);
-          transform: scale(0.25);
+footer .footerA .footer__logo {
+  width: 40%;
+  opacity: 0.2;
+  margin-bottom: 5%;
 }
 
-footer .footer__sideB {
-  height: 100%;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: footer__sideB;
-  position: relative;
+footer .footerB .footer_contact--img {
+  width: 10%;
+  margin-top: 2%;
+  opacity: 0.5;
 }
 
-footer .footer__sideB .footer__sideB-imgA {
-  height: 85%;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+footer .footerB .footer_contact--img:hover {
+  opacity: 1;
 }
 
-footer .footer__sideB .footer__sideB-imgA .footer__sideB-img {
-  -webkit-transform: scale(0.3);
-          transform: scale(0.3);
+footer .footerC .nav-link {
+  margin-top: 8%;
+  color: #f2f2f2;
+  opacity: 0.4;
+  font-size: 0.8em;
+  font-family: "PersonalUse", cursive;
+}
+
+footer .footerC .nav-link:hover {
+  opacity: 1;
 }
 
 /* A N I M A C I O N E S */
@@ -1009,19 +904,37 @@ footer .footer__sideB .footer__sideB-imgA .footer__sideB-img {
 
 @-webkit-keyframes blackBackground {
   from {
-    background-color: #fff;
+    background-color: #000;
   }
   to {
-    background-color: #000;
+    background-color: #fff;
   }
 }
 
 @keyframes blackBackground {
   from {
+    background-color: #000;
+  }
+  to {
+    background-color: #fff;
+  }
+}
+
+@-webkit-keyframes blackBackgroundTV {
+  from {
     background-color: #fff;
   }
   to {
-    background-color: #000;
+    background-image: url("../images/home/tv2.gif");
+  }
+}
+
+@keyframes blackBackgroundTV {
+  from {
+    background-color: #fff;
+  }
+  to {
+    background-image: url("../images/home/tv2.gif");
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,5 @@
-var contactHome = document.getElementById("contlinkABtn");
-var contactMenu = document.getElementById("contactMenu");
+var contactHome = document.getElementById("contactHome");
+var contactMenu = document.getElementById("contactHome2");
 var buttonCombo1 = document.getElementById("buttonCombo1");
 var buttonCombo2 = document.getElementById("buttonCombo2");
 var buttonCombo3 = document.getElementById("buttonCombo3");
@@ -19,7 +19,6 @@ document.getElementById("contFooter__comnboA").style.display = "flex";
 
 
 function btnSwitch(option) {
-
     buttonCombo1.className = "buttonCombo--style";
     buttonCombo2.className = "buttonCombo--style";
     buttonCombo3.className = "buttonCombo--style";
@@ -40,14 +39,12 @@ function btnSwitch(option) {
             buttonCombo1.className = "buttonCombo--styleSelected";
             document.getElementById("contB__contDisplay1").style.display = "block";
             document.getElementById("contFooter__comnboA").style.display = "none";
-            blackBg();
             setTimeout(function () { document.getElementById("contFooter__comnboA").style.display = "flex"; blackBg(); }, 500);
             break;
         case 1:
             buttonCombo2.className = "buttonCombo--styleSelected";
             document.getElementById("contB__contDisplay2").style.display = "block";
             document.getElementById("contFooter__comnboB").style.display = "none";
-            blackBg();
             setTimeout(function () { document.getElementById("contFooter__comnboB").style.display = "flex"; blackBg(); }, 500);
             break;
         case 2:
@@ -70,16 +67,15 @@ function btnSwitch(option) {
 
 function blackBg() {
     contB.style.animation = "blackBackground 0.2s normal 1";
-    setTimeout(function () { contB.style.animation = ""; }, 200);
+    setTimeout(function () { contB.style.animation = ""; }, 150);
 }
 
 
 
-menuSU.addEventListener("click", function () { menuDisplay() });
-menuSUP.addEventListener("click", function () { menuDisplay() });
+//menuSU.addEventListener("click", function () { menuDisplay() });
+//menuSUP.addEventListener("click", function () { menuDisplay() });
 //homeMenu2.addEventListener("click", function () { menuDisplayP() });
-
- menuTV.addEventListener("click", function () { menuHide() });
+//menuTV.addEventListener("click", function () { menuHide() });
 
 function menuDisplay() {
     document.getElementById("contA").style.display = "none";
@@ -87,7 +83,7 @@ function menuDisplay() {
     document.getElementById("contC").style.display = "none";
     document.getElementById("contD").style.display = "flex";
     document.getElementById("footer").style.display = "none";
-  
+
 }
 function menuHide() {
     document.getElementById("contA").style.display = "flex";
