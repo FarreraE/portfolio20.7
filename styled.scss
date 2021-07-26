@@ -78,6 +78,7 @@ li {
     @include animation(backgroundTV, 2s, alternate, 2, 0);
     background-image: url("images/home/tverror3.jpg");
     @include flex(column, space-around);
+    display: none;
     .contA__image--logo {
         width: 80%;
         position: absolute;
