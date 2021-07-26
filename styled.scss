@@ -84,7 +84,7 @@ li {
         top: 200px; left: 45px;
     }
     .home__ul {
-        margin-top: -50%;
+        margin-top: 60%;
         @include flex(column, space-around);
         @include animation(showUp, 2s, alternate, 1, 2s);
         li {
@@ -93,6 +93,8 @@ li {
                 letter-spacing: 0.1em;
                 @include animation(glitchText, 2s, alternate, infinite, 3s);
                 @include font("patron", 1.5em, bold, var(--colorSecondary));
+            }  .home--linkA:hover {
+                @include font("patron", 1.5em, bold, var(--colorPrimary));
             }
         }
     }
@@ -337,15 +339,17 @@ li {
         @include animation(backgroundTV, 2s, alternate, 2, 0);
         .contA__image--logo {
             width: 80%;
-            top: 100px; left: 80px;
+            top: 150px; left: 80px;
         }
         .home__ul {
-            margin-top: 0%;
+            margin-top: 40%;
             li {
                 margin-top: 1%;
                 .home--linkA {
                     letter-spacing: 0.2em;
                     @include font("patron", 2.0em, bold, var(--colorSecondary));
+                }.home--linkA:hover {
+                    @include font("patron", 2.0em, bold, var(--colorPrimary));
                 }
             }
         }
@@ -454,15 +458,17 @@ li {
         @include animation(backgroundTV, 2s, alternate, 2, 0);
         .contA__image--logo {
             width: 70%;
-            top: 100px; left: 120px;
+            top: 150px; left: 120px;
         }
         .home__ul {
-            margin-top: 0%;
+            margin-top: 40%;
             li {
                 margin-top: 1%;
                 .home--linkA {
                     letter-spacing: 0.2em;
                     @include font("patron", 2.5em, bold, var(--colorSecondary));
+                }.home--linkA:hover {
+                    @include font("patron", 2.5em, bold, var(--colorPrimary));
                 }
             }
         }
@@ -584,15 +590,17 @@ li {
         @include animation(backgroundTV, 2s, alternate, 2, 0);
         .contA__image--logo {
             width: 60%;
-            top: 80px; left: 150px;
+            top: 150px; left: 210px;
         }
         .home__ul {
-            margin-top: 0%;
+            margin-top: 40%;
             li {
                 margin-top: 1%;
                 .home--linkA {
                     letter-spacing: 0.2em;
                     @include font("patron", 3em, bold, var(--colorSecondary));
+                }.home--linkA:hover {
+                    @include font("patron", 3em, bold, var(--colorPrimary));
                 }
             }
         }
@@ -697,15 +705,17 @@ li {
         @include animation(backgroundTV, 2s, alternate, 2, 0);
         .contA__image--logo {
             width: 50%;
-            top: 80px; left: 450px;
+            top: 150px; left: 460px;
         }
         .home__ul {
-            margin-top: 10%;
+            margin-top: 20%;
             li {
                 margin-top: 1%;
                 .home--linkA {
                     letter-spacing: 0.2em;
                     @include font("patron", 3.5em, bold, var(--colorSecondary));
+                }.home--linkA:hover {
+                    @include font("patron", 3.5em, bold, var(--colorPrimary));
                 }
             }
         }
