@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
+    box-sizing: border-box;
+}
 
 @font-face {
     font-family: "lemon";
@@ -52,7 +52,7 @@ h1 {
     font-family: "patron", cursive;
     font-size: 1.8em;
     font-weight: bold;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
     @include animation(glitchText, 2s, alternate, infinite, 3s);
 }
 h5 {
@@ -77,23 +77,20 @@ li {
     background-attachment: fixed;
     @include animation(backgroundTV, 2s, alternate, 2, 0);
     background-image: url("images/home/tverror3.jpg");
-    @include flex(column, center);
-    .contA__image {
-        height: 20%;
-        .contA__image--logo {
-            margin: auto;
-            width: 90%;
-            position: absolute;
-        }
+    @include flex(column, space-around);
+    .contA__image--logo {
+       
+        width: 80%;
+        position: absolute;
+        top: 200px; left: 45px;
     }
     .home__ul {
-        margin-top: 15%;
         @include flex(column, space-around);
         @include animation(showUp, 2s, alternate, 1, 2s);
         li {
             margin-top: 5%;
             .home--linkA {
-                letter-spacing: 0.2em;
+                letter-spacing: 0.1em;
                 @include animation(glitchText, 2s, alternate, infinite, 3s);
                 @include font("patron", 1.5em, bold, var(--colorSecondary));
             }
@@ -333,8 +330,27 @@ li {
 /*-----------------------------------------------------------------FOOTER*/
 @import "animaciones";
 @media all and (min-width: 576px) {
+    h1 {
+        font-size: 2.2em;
+    }
     h5 {
         font-size: 2em;
+    }
+    .contA {
+        @include animation(backgroundTV, 2s, alternate, 2, 0);
+        .contA__image--logo {
+            width: 80%;
+        }
+        .home__ul {
+            margin-top: 50%;
+            li {
+                margin-top: 5%;
+                .home--linkA {
+                    letter-spacing: 0.2em;
+                    @include font("patron", 1.8em, bold, var(--colorSecondary));
+                }
+            }
+        }
     }
     .contB {
         nav {
@@ -433,7 +449,25 @@ li {
 }
 
 @media all and (min-width: 768px) {
-    .contB {
+    h1 {
+        font-size: 3.5em;
+    }
+    .contA {
+        @include animation(backgroundTV, 2s, alternate, 2, 0);
+        .contA__image--logo {
+            width: 70%;
+        }
+        .home__ul {
+            margin-top: 50%;
+            li {
+                margin-top: 2%;
+                .home--linkA {
+                    letter-spacing: 0.2em;
+                    @include font("patron", 3em, bold, var(--colorSecondary));
+                }
+            }
+        }
+    }.contB {
         nav {
             .contB__NAV__sideA {
                 margin-top: 5%;
@@ -637,7 +671,25 @@ li {
 }
 
 @media all and (min-width: 1300px) {
-    .contB {
+    h1 {
+        font-size: 4.5em;
+    }
+    .contA {
+        @include animation(backgroundTV, 2s, alternate, 2, 0);
+        .contA__image--logo {
+            transform: scale(0.5);
+        }
+        .home__ul {
+            margin-top: 25%;
+            li {
+                margin-top: 2%;
+                .home--linkA {
+                    letter-spacing: 0.2em;
+                    @include font("patron", 3.5em, bold, var(--colorSecondary));
+                }
+            }
+        }
+    }.contB {
         nav {
             .contB__NAV__sideA {
                 .contB__NAV__sideA--title {

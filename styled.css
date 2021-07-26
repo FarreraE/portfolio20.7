@@ -36,7 +36,7 @@ h1 {
   font-family: "patron", cursive;
   font-size: 1.8em;
   font-weight: bold;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   -webkit-animation-name: glitchText;
           animation-name: glitchText;
   -webkit-animation-duration: 2s;
@@ -89,26 +89,21 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.contA .contA__image {
-  height: 20%;
-}
-
-.contA .contA__image .contA__image--logo {
-  margin: auto;
-  width: 90%;
+.contA .contA__image--logo {
+  width: 80%;
   position: absolute;
+  top: 200px;
+  left: 45px;
 }
 
 .contA .home__ul {
-  margin-top: 15%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,7 +133,7 @@ li {
 }
 
 .contA .home__ul li .home--linkA {
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
   -webkit-animation-name: glitchText;
           animation-name: glitchText;
   -webkit-animation-duration: 2s;
@@ -919,8 +914,40 @@ li {
 }
 
 @media all and (min-width: 576px) {
+  h1 {
+    font-size: 2.2em;
+  }
   h5 {
     font-size: 2em;
+  }
+  .contA {
+    -webkit-animation-name: backgroundTV;
+            animation-name: backgroundTV;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-iteration-count: 2;
+            animation-iteration-count: 2;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-delay: 0;
+            animation-delay: 0;
+  }
+  .contA .contA__image--logo {
+    width: 80%;
+  }
+  .contA .home__ul {
+    margin-top: 50%;
+  }
+  .contA .home__ul li {
+    margin-top: 5%;
+  }
+  .contA .home__ul li .home--linkA {
+    letter-spacing: 0.2em;
+    font-family: "patron";
+    font-size: 1.8em;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--colorSecondary);
   }
   .contB nav .contB__NAV__sideA {
     margin-top: 3%;
@@ -1032,6 +1059,38 @@ li {
 }
 
 @media all and (min-width: 768px) {
+  h1 {
+    font-size: 3.5em;
+  }
+  .contA {
+    -webkit-animation-name: backgroundTV;
+            animation-name: backgroundTV;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-iteration-count: 2;
+            animation-iteration-count: 2;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-delay: 0;
+            animation-delay: 0;
+  }
+  .contA .contA__image--logo {
+    width: 70%;
+  }
+  .contA .home__ul {
+    margin-top: 50%;
+  }
+  .contA .home__ul li {
+    margin-top: 2%;
+  }
+  .contA .home__ul li .home--linkA {
+    letter-spacing: 0.2em;
+    font-family: "patron";
+    font-size: 3em;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--colorSecondary);
+  }
   .contB nav .contB__NAV__sideA {
     margin-top: 5%;
   }
@@ -1257,6 +1316,39 @@ li {
 }
 
 @media all and (min-width: 1300px) {
+  h1 {
+    font-size: 4.5em;
+  }
+  .contA {
+    -webkit-animation-name: backgroundTV;
+            animation-name: backgroundTV;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-iteration-count: 2;
+            animation-iteration-count: 2;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-delay: 0;
+            animation-delay: 0;
+  }
+  .contA .contA__image--logo {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  .contA .home__ul {
+    margin-top: 25%;
+  }
+  .contA .home__ul li {
+    margin-top: 2%;
+  }
+  .contA .home__ul li .home--linkA {
+    letter-spacing: 0.2em;
+    font-family: "patron";
+    font-size: 3.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--colorSecondary);
+  }
   .contB nav .contB__NAV__sideA .contB__NAV__sideA--title {
     font-family: "patron";
     font-size: 3em;
