@@ -5,38 +5,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: #000;
-}
-
-section {
-  height: 100vh;
-}
-
-h1 {
-  color: #f2f2f2;
-  font-family: "patron", cursive;
-  font-size: 2em;
-  font-weight: bold;
-}
-
-h5 {
-  color: #f2f2f2;
-  font-family: "patron", cursive;
-  font-size: 1.2em;
-  font-weight: bold;
-  text-align: center;
-  opacity: 0.2;
-}
-
-a,
-ul,
-li {
-  list-style: none;
-  text-decoration: none;
-  font-family: "consola";
-}
-
 @font-face {
   font-family: "lemon";
   src: url("css/Fuentes/LEMONMILK-Regular.otf");
@@ -59,6 +27,45 @@ li {
 }
 
 /* M I X I N */
+body {
+  background-color: #000;
+}
+
+h1 {
+  color: #f2f2f2;
+  font-family: "patron", cursive;
+  font-size: 1.8em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  -webkit-animation-name: glitchText;
+          animation-name: glitchText;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+h5 {
+  color: #f2f2f2;
+  font-family: "patron", cursive;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0.2;
+}
+
+a,
+ul,
+li {
+  list-style: none;
+  text-decoration: none;
+  font-family: "consola";
+}
+
 /*-----------------------------------------------------------------contA*/
 .contA {
   height: 100vh;
@@ -131,6 +138,7 @@ li {
 }
 
 .contA .home__ul li .home--linkA {
+  letter-spacing: 0.2em;
   -webkit-animation-name: glitchText;
           animation-name: glitchText;
   -webkit-animation-duration: 2s;
@@ -142,7 +150,7 @@ li {
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
   font-family: "patron";
-  font-size: 1.6em;
+  font-size: 1.5em;
   font-weight: bold;
   text-decoration: none;
   color: var(--colorSecondary);
