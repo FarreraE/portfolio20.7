@@ -1,5 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
 body {
     background-color: #000;
+}
+section{
+    height: 100vh;
+}
+h1 {
+    color: #f2f2f2;
+    font-family: "patron", cursive;
+    font-size: 2em;
+    font-weight: bold;
 }
 h5 {
     color: #f2f2f2;
@@ -55,6 +70,44 @@ li {
     text-decoration: none;
     color: $color;
 }
+/*-----------------------------------------------------------------contA*/
+.contA {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    @include animation(backgroundTV, 2s, alternate, 2, 0);
+    background-image: url("images/home/tverror3.jpg");
+    @include flex(column, center);
+    .contA__image {
+        height: 20%;
+        background-color: blueviolet;
+        .contA__image--logo {
+            margin: auto;
+            width: 90%;
+            position: absolute;
+        }
+    }
+    .home__ul {
+        margin-top: 15%;
+        @include flex(column, space-around);
+        @include animation(showUp, 2s, alternate, 1, 2s);
+        li {
+            margin-top: 5%;
+            .home--linkA {
+                @include animation(glitchText, 2s, alternate, infinite, 3s);
+                @include font("patron", 1.8em, bold, var(--colorSecondary));
+            }
+        }
+    }
+    #logoBlue {
+        @include animation(logoBlue, 5s, alternate, infinite, 0);
+    }
+
+    #logoRed {
+        @include animation(logoRed, 5s, alternate, infinite, 0);
+    }
+}
+/*-----------------------------------------------------------------contA*/
 /*-----------------------------------------------------------------contB*/
 .contB {
     background-image: url("images/home/tv7.gif");
@@ -148,7 +201,7 @@ li {
     width: 100%;
     font-family: "patron";
     color: #f2f2f2;
-    background-image: url("/images/home/tverror6.jpg");
+    background-image: url("images/home/tverror6.jpg");
     background-size: contain;
     background-attachment: fixed;
     background-color: none;
@@ -301,7 +354,7 @@ li {
         .buttonOrganizer {
             margin-top: 3%;
             .buttonCombo--style {
-                @include font("patron", 1.0em, bold, var(--colorSecondary));
+                @include font("patron", 1em, bold, var(--colorSecondary));
                 margin-left: 0em;
                 margin-right: 0em;
             }
@@ -449,7 +502,8 @@ li {
                 }
             }
         }
-    }    .contD {
+    }
+    .contD {
         .containercontD--menu {
             border: yellow solid 5px;
             .contD--menuSelector {
@@ -558,7 +612,7 @@ li {
         padding: 2%;
         .menuImg {
             transform: scale(1.3);
-         }
+        }
         .containercontD--menu {
             border: yellow solid 5px;
             .contD--menuSelector {
@@ -631,23 +685,21 @@ li {
                 }
             }
         }
-    }  .contD {
+    }
+    .contD {
         padding: 5%;
         .menuImg {
-           transform: scale(1.5);
+            transform: scale(1.5);
         }
         .containercontD--menu {
             margin-top: 2%;
             padding: 2%;
             .contD--menuSelector {
-            
                 .contD--menuA {
-              
                     @include font(consola, 3em, bolder, #ffffff);
                 }
             }
             .contD--menuSelector:hover {
-          
                 .contD--menuA:hover {
                     @include font(consola, 2.8em, bolder, #ff0092);
                 }

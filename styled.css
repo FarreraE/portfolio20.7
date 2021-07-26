@@ -1,5 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #000;
+}
+
+section {
+  height: 100vh;
+}
+
+h1 {
+  color: #f2f2f2;
+  font-family: "patron", cursive;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 h5 {
@@ -41,6 +59,123 @@ li {
 }
 
 /* M I X I N */
+/*-----------------------------------------------------------------contA*/
+.contA {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-animation-name: backgroundTV;
+          animation-name: backgroundTV;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  background-image: url("images/home/tverror3.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contA .contA__image {
+  height: 20%;
+  background-color: blueviolet;
+}
+
+.contA .contA__image .contA__image--logo {
+  margin: auto;
+  width: 90%;
+  position: absolute;
+}
+
+.contA .home__ul {
+  margin-top: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation-name: showUp;
+          animation-name: showUp;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.contA .home__ul li {
+  margin-top: 5%;
+}
+
+.contA .home__ul li .home--linkA {
+  -webkit-animation-name: glitchText;
+          animation-name: glitchText;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  font-family: "patron";
+  font-size: 1.8em;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--colorSecondary);
+}
+
+.contA #logoBlue {
+  -webkit-animation-name: logoBlue;
+          animation-name: logoBlue;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+}
+
+.contA #logoRed {
+  -webkit-animation-name: logoRed;
+          animation-name: logoRed;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+}
+
+/*-----------------------------------------------------------------contA*/
 /*-----------------------------------------------------------------contB*/
 .contB {
   background-image: url("images/home/tv7.gif");
@@ -238,7 +373,7 @@ li {
   width: 100%;
   font-family: "patron";
   color: #f2f2f2;
-  background-image: url("/images/home/tverror6.jpg");
+  background-image: url("images/home/tverror6.jpg");
   background-size: contain;
   background-attachment: fixed;
   background-color: none;

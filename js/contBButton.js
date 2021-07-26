@@ -76,7 +76,7 @@ contactHome2.addEventListener("click", function () { menuDisplay() });
 menuTV.addEventListener("click", function () { menuHide() });
 
 function menuDisplay() {
-   // document.getElementById("contA").style.display = "none";
+   document.getElementById("contA").style.display = "none";
     document.getElementById("contB").style.display = "none";
     document.getElementById("contC").style.display = "none";
     document.getElementById("contD").style.display = "flex";
@@ -84,7 +84,7 @@ function menuDisplay() {
 
 }
 function menuHide() {
-   // document.getElementById("contA").style.display = "flex";
+   document.getElementById("contA").style.display = "flex";
     document.getElementById("contB").style.display = "block";
     document.getElementById("contC").style.display = "block";
     document.getElementById("contD").style.display = "none";
