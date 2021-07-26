@@ -104,6 +104,7 @@ li {
 }
 
 .contA .home__ul {
+  margin-top: -50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -915,10 +916,7 @@ li {
 
 @media all and (min-width: 576px) {
   h1 {
-    font-size: 2.2em;
-  }
-  h5 {
-    font-size: 2em;
+    font-size: 2.5em;
   }
   .contA {
     -webkit-animation-name: backgroundTV;
@@ -934,17 +932,19 @@ li {
   }
   .contA .contA__image--logo {
     width: 80%;
+    top: 100px;
+    left: 80px;
   }
   .contA .home__ul {
-    margin-top: 50%;
+    margin-top: 0%;
   }
   .contA .home__ul li {
-    margin-top: 5%;
+    margin-top: 1%;
   }
   .contA .home__ul li .home--linkA {
     letter-spacing: 0.2em;
     font-family: "patron";
-    font-size: 1.8em;
+    font-size: 2em;
     font-weight: bold;
     text-decoration: none;
     color: var(--colorSecondary);
@@ -1060,7 +1060,7 @@ li {
 
 @media all and (min-width: 768px) {
   h1 {
-    font-size: 3.5em;
+    font-size: 3em;
   }
   .contA {
     -webkit-animation-name: backgroundTV;
@@ -1076,17 +1076,19 @@ li {
   }
   .contA .contA__image--logo {
     width: 70%;
+    top: 100px;
+    left: 120px;
   }
   .contA .home__ul {
-    margin-top: 50%;
+    margin-top: 0%;
   }
   .contA .home__ul li {
-    margin-top: 2%;
+    margin-top: 1%;
   }
   .contA .home__ul li .home--linkA {
     letter-spacing: 0.2em;
     font-family: "patron";
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: bold;
     text-decoration: none;
     color: var(--colorSecondary);
@@ -1213,6 +1215,40 @@ li {
 }
 
 @media all and (min-width: 992px) {
+  h1 {
+    font-size: 3.5em;
+  }
+  .contA {
+    -webkit-animation-name: backgroundTV;
+            animation-name: backgroundTV;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-iteration-count: 2;
+            animation-iteration-count: 2;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-delay: 0;
+            animation-delay: 0;
+  }
+  .contA .contA__image--logo {
+    width: 60%;
+    top: 80px;
+    left: 150px;
+  }
+  .contA .home__ul {
+    margin-top: 0%;
+  }
+  .contA .home__ul li {
+    margin-top: 1%;
+  }
+  .contA .home__ul li .home--linkA {
+    letter-spacing: 0.2em;
+    font-family: "patron";
+    font-size: 3em;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--colorSecondary);
+  }
   .contB nav .contB__NAV__sideA {
     margin-top: 8%;
   }
@@ -1317,7 +1353,7 @@ li {
 
 @media all and (min-width: 1300px) {
   h1 {
-    font-size: 4.5em;
+    font-size: 5em;
   }
   .contA {
     -webkit-animation-name: backgroundTV;
@@ -1332,14 +1368,15 @@ li {
             animation-delay: 0;
   }
   .contA .contA__image--logo {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    width: 50%;
+    top: 80px;
+    left: 450px;
   }
   .contA .home__ul {
-    margin-top: 25%;
+    margin-top: 10%;
   }
   .contA .home__ul li {
-    margin-top: 2%;
+    margin-top: 1%;
   }
   .contA .home__ul li .home--linkA {
     letter-spacing: 0.2em;

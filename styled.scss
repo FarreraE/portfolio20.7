@@ -79,12 +79,12 @@ li {
     background-image: url("images/home/tverror3.jpg");
     @include flex(column, space-around);
     .contA__image--logo {
-       
         width: 80%;
         position: absolute;
         top: 200px; left: 45px;
     }
     .home__ul {
+        margin-top: -50%;
         @include flex(column, space-around);
         @include animation(showUp, 2s, alternate, 1, 2s);
         li {
@@ -331,23 +331,21 @@ li {
 @import "animaciones";
 @media all and (min-width: 576px) {
     h1 {
-        font-size: 2.2em;
-    }
-    h5 {
-        font-size: 2em;
+        font-size: 2.5em;
     }
     .contA {
         @include animation(backgroundTV, 2s, alternate, 2, 0);
         .contA__image--logo {
             width: 80%;
+            top: 100px; left: 80px;
         }
         .home__ul {
-            margin-top: 50%;
+            margin-top: 0%;
             li {
-                margin-top: 5%;
+                margin-top: 1%;
                 .home--linkA {
                     letter-spacing: 0.2em;
-                    @include font("patron", 1.8em, bold, var(--colorSecondary));
+                    @include font("patron", 2.0em, bold, var(--colorSecondary));
                 }
             }
         }
@@ -450,20 +448,21 @@ li {
 
 @media all and (min-width: 768px) {
     h1 {
-        font-size: 3.5em;
+        font-size: 3em;
     }
     .contA {
         @include animation(backgroundTV, 2s, alternate, 2, 0);
         .contA__image--logo {
             width: 70%;
+            top: 100px; left: 120px;
         }
         .home__ul {
-            margin-top: 50%;
+            margin-top: 0%;
             li {
-                margin-top: 2%;
+                margin-top: 1%;
                 .home--linkA {
                     letter-spacing: 0.2em;
-                    @include font("patron", 3em, bold, var(--colorSecondary));
+                    @include font("patron", 2.5em, bold, var(--colorSecondary));
                 }
             }
         }
@@ -578,6 +577,26 @@ li {
 }
 
 @media all and (min-width: 992px) {
+    h1 {
+        font-size: 3.5em;
+    }
+    .contA {
+        @include animation(backgroundTV, 2s, alternate, 2, 0);
+        .contA__image--logo {
+            width: 60%;
+            top: 80px; left: 150px;
+        }
+        .home__ul {
+            margin-top: 0%;
+            li {
+                margin-top: 1%;
+                .home--linkA {
+                    letter-spacing: 0.2em;
+                    @include font("patron", 3em, bold, var(--colorSecondary));
+                }
+            }
+        }
+    }
     .contB {
         nav {
             .contB__NAV__sideA {
@@ -672,17 +691,18 @@ li {
 
 @media all and (min-width: 1300px) {
     h1 {
-        font-size: 4.5em;
+        font-size: 5em;
     }
     .contA {
         @include animation(backgroundTV, 2s, alternate, 2, 0);
         .contA__image--logo {
-            transform: scale(0.5);
+            width: 50%;
+            top: 80px; left: 450px;
         }
         .home__ul {
-            margin-top: 25%;
+            margin-top: 10%;
             li {
-                margin-top: 2%;
+                margin-top: 1%;
                 .home--linkA {
                     letter-spacing: 0.2em;
                     @include font("patron", 3.5em, bold, var(--colorSecondary));
