@@ -57,7 +57,7 @@ li {
 }
 /*-----------------------------------------------------------------contB*/
 .contB {
-    background-image: url("/images/home/tv7.gif");
+    background-image: url("images/home/tv7.gif");
     background-repeat: no-repeat;
     background-size: cover;
     nav {
@@ -269,6 +269,7 @@ li {
             opacity: 0.4;
             font-size: 0.8em;
             font-family: "patron", cursive;
+            font-weight: bolder;
         }
         .nav-link:hover {
             opacity: 1;
