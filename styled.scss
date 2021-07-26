@@ -181,7 +181,6 @@ li {
         width: 90%;
         .contFooter__comnbo {
             flex-wrap: wrap;
-            @include animation(glitchText, 2s, alternate, infinite, 2s);
             @include flex(row, space-between);
             width: 100%;
             display: none;
@@ -399,7 +398,7 @@ li {
     }
     .contDisplay {
         margin-top: 6%;
-        height: 450px;
+        height: 425px;
         border-top:2px solid #ff0092;
         border-bottom:2px solid #ff0092;
         .contDisplay--Article {
@@ -429,7 +428,7 @@ li {
             @include flex(row, center);
             flex-wrap: nowrap;
             .contFooter__comnbo--img {
-                width: 60%;
+                width: 55%;
             }
             .contFooter__comnbo--img:hover {
                 /* @include animation(backgroundTV, 1s, alternate, infinite, 0);*/

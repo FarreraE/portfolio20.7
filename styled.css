@@ -337,16 +337,6 @@ li {
 .contB .contFooter .contFooter__comnbo {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-animation-name: glitchText;
-          animation-name: glitchText;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1045,7 +1035,7 @@ li {
   }
   .contB .contDisplay {
     margin-top: 6%;
-    height: 450px;
+    height: 425px;
     border-top: 2px solid #ff0092;
     border-bottom: 2px solid #ff0092;
   }
@@ -1116,7 +1106,7 @@ li {
         flex-wrap: nowrap;
   }
   .contB .contFooter .contFooter__comnbo a .contFooter__comnbo--img {
-    width: 60%;
+    width: 55%;
   }
   .contB .contFooter .contFooter__comnbo a .contFooter__comnbo--img:hover {
     /* @include animation(backgroundTV, 1s, alternate, infinite, 0);*/
