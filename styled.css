@@ -92,7 +92,6 @@ li {
 
 .contA .contA__image {
   height: 20%;
-  background-color: blueviolet;
 }
 
 .contA .contA__image .contA__image--logo {
@@ -143,7 +142,7 @@ li {
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
   font-family: "patron";
-  font-size: 1.8em;
+  font-size: 1.6em;
   font-weight: bold;
   text-decoration: none;
   color: var(--colorSecondary);
