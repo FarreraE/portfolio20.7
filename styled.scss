@@ -72,6 +72,7 @@ li {
     height: 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
     @include animation(backgroundTV, 2s, alternate, 2, 0);
     background-image: url("images/home/tverror3.jpg");
     @include flex(column, space-around);
@@ -93,7 +94,7 @@ li {
                 @include font("patron", 1.5em, bold, var(--colorSecondary));
             }
             .home--linkA:hover {
-                @include font("patron", 1.5em, bold, var(--colorPrimary));
+                @include font("patron", 1.5em, bold, rgb(111, 0, 255));
             }
         }
     }
@@ -113,21 +114,21 @@ li {
     background-size: cover;
     nav {
         .contB__NAV__sideA {
-            margin-top: 5%;
+            margin-top: 10%;
             .contB__NAV__sideA--title {
                 @include font("patron", 1.5em, bolder, var(--colorSecondary));
                 @include animation(glitchText, 2s, alternate, infinite, 2s);
             }
         }
         .contB__NAV__sideB {
-            margin-top: 5%;
+            margin-top: 10%;
             .contB__NAV__sideB--img {
                 width: 80%;
             }
         }
     }
     .buttonOrganizer {
-        margin-top: 5%;
+        margin-top: 8%;
         border-radius: 4px;
         background-color: var(--colorPrimary);
         @include flex(column, space-around);
@@ -153,23 +154,26 @@ li {
     }
     .contDisplay {
         margin: 0 auto;
-        margin-top: 5%;
+        margin-top: 3%;
         padding: 3%;
-        background-color: var(--colorSecondary);
-        border-radius: 8px;
-        border: #a3006d solid 3px;
         text-align: justify;
-        @include font("consola", 0.9em, bolder, --colorPrimary);
+        @include font("consola", 0.9em, bolder, white);
         width: 90%;
         height: 400px;
 
         .contDisplay--Article {
             display: none;
+            font-family: 'Baloo Chettan 2', cursive;
+            font-size: 1.1em;
+            .contDisplay__title{
+                margin-top: 2%;
+                @include font("consola", 1.8em, bolder, #a3006d);
+            }
         }
     }
     .contFooter {
         margin: auto;
-        margin-top: 5%;
+        margin-top: 8%;
         width: 90%;
         .contFooter__comnbo {
             flex-wrap: wrap;
@@ -744,11 +748,14 @@ li {
     .contB {
         nav {
             .contB__NAV__sideA {
+                margin-top: 3%;
                 .contB__NAV__sideA--title {
+                    
                     @include font("patron", 3em, bold, var(--colorSecondary));
                 }
             }
             .contB__NAV__sideB {
+                margin-top: 3%;
                 .contB__NAV__sideB--img {
                     width: 25%;
                 }

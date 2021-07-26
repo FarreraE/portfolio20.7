@@ -72,6 +72,7 @@ li {
   height: 100vh;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center;
   -webkit-animation-name: backgroundTV;
           animation-name: backgroundTV;
   -webkit-animation-duration: 2s;
@@ -158,7 +159,7 @@ li {
   font-size: 1.5em;
   font-weight: bold;
   text-decoration: none;
-  color: var(--colorPrimary);
+  color: #6f00ff;
 }
 
 .contA #logoBlue {
@@ -195,7 +196,7 @@ li {
 }
 
 .contB nav .contB__NAV__sideA {
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
 .contB nav .contB__NAV__sideA .contB__NAV__sideA--title {
@@ -217,7 +218,7 @@ li {
 }
 
 .contB nav .contB__NAV__sideB {
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
 .contB nav .contB__NAV__sideB .contB__NAV__sideB--img {
@@ -225,7 +226,7 @@ li {
 }
 
 .contB .buttonOrganizer {
-  margin-top: 5%;
+  margin-top: 8%;
   border-radius: 4px;
   background-color: var(--colorPrimary);
   display: -webkit-box;
@@ -294,28 +295,36 @@ li {
 
 .contB .contDisplay {
   margin: 0 auto;
-  margin-top: 5%;
+  margin-top: 3%;
   padding: 3%;
-  background-color: var(--colorSecondary);
-  border-radius: 8px;
-  border: #a3006d solid 3px;
   text-align: justify;
   font-family: "consola";
   font-size: 0.9em;
   font-weight: bolder;
   text-decoration: none;
-  color: --colorPrimary;
+  color: white;
   width: 90%;
   height: 400px;
 }
 
 .contB .contDisplay .contDisplay--Article {
   display: none;
+  font-family: 'Baloo Chettan 2', cursive;
+  font-size: 1.1em;
+}
+
+.contB .contDisplay .contDisplay--Article .contDisplay__title {
+  margin-top: 2%;
+  font-family: "consola";
+  font-size: 1.8em;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #a3006d;
 }
 
 .contB .contFooter {
   margin: auto;
-  margin-top: 5%;
+  margin-top: 8%;
   width: 90%;
 }
 
@@ -1451,12 +1460,18 @@ li {
     text-decoration: none;
     color: var(--colorPrimary);
   }
+  .contB nav .contB__NAV__sideA {
+    margin-top: 3%;
+  }
   .contB nav .contB__NAV__sideA .contB__NAV__sideA--title {
     font-family: "patron";
     font-size: 3em;
     font-weight: bold;
     text-decoration: none;
     color: var(--colorSecondary);
+  }
+  .contB nav .contB__NAV__sideB {
+    margin-top: 3%;
   }
   .contB nav .contB__NAV__sideB .contB__NAV__sideB--img {
     width: 25%;
