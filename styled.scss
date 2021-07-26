@@ -148,10 +148,10 @@ li {
             border: none;
         }
         .buttonCombo--styleSelected {
-            border-radius: 4px;
-            border: black solid 1px;
+            border-radius: 0.2em;
+            border: 0.1em solid #ff0092;
             background-color: var(--colorPrimary);
-            padding: 0.1em;
+            padding: 0.2em;
             @include font("patron", 1em, bolder, var(--colorSecondary));
             @include animation(glitchBox, 3s, alternate, infinite, 0);
         }
@@ -159,13 +159,14 @@ li {
     .contDisplay {
         margin: 0 auto;
         margin-top: 8%;
-        padding: 3%;
+        padding: 5% 4% 8% 4%;
         text-align: justify;
         @include font("consola", 0.9em, bolder, white);
         width: 90%;
-        height: 400px;
-        border-top: 2px solid #ff0092;
-        border-bottom: 2px solid #ff0092;
+        border-radius: 0.5em;
+        border-top: 0.15em solid #ff0092;
+        border-bottom: 0.15em solid #ff0092;
+        @include animation(glitchBox, 6s, alternate, infinite, 0);
         .contDisplay--Article {
             display: none;
             font-family: "Baloo Chettan 2", cursive;
@@ -368,15 +369,15 @@ li {
     .contB {
         nav {
             .contB__NAV__sideA {
-                margin-top: 8%;
+                margin-top: 7%;
                 .contB__NAV__sideA--title {
                     @include font("patron", 2.3em, bolder, var(--colorSecondary));
                 }
             }
             .contB__NAV__sideB {
-                margin-top: 8%;
+                margin-top: 7%;
                 .contB__NAV__sideB--img {
-                    width: 55%;
+                    width: 65%;
                 }
             }
         }
@@ -386,13 +387,18 @@ li {
                 @include font("patron", 1.1em, bold, var(--colorSecondary));
             }
             .buttonCombo--styleSelected {
-                padding: 0.2em;
-                @include font("patron", 1.3em, bolder, var(--colorSecondary));
+                padding: 0.25em;
+                border-radius: 0.25em;
+                border: 0.1em solid #ff0092;
+                @include font("patron", 1.2em, bolder, var(--colorSecondary));
             }
         }
         .contDisplay {
             margin-top: 6%;
-            height: 440px;
+            padding: 5% 4% 8% 4%;
+            border-radius: 0.5em;
+            border-top: 0.2em solid #ff0092;
+            border-bottom: 0.2em solid #ff0092;
             .contDisplay--Article {
                 font-size: 1.3em;
                 .contDisplay__title {
@@ -498,18 +504,18 @@ li {
             .contB__NAV__sideA {
                 margin-top: 6%;
                 .contB__NAV__sideA--title {
-                    @include font("patron", 2.3em, bolder, var(--colorSecondary));
+                    @include font("patron", 2.5em, bolder, var(--colorSecondary));
                 }
             }
             .contB__NAV__sideB {
                 margin-top: 6%;
                 .contB__NAV__sideB--img {
-                    width: 55%;
+                    width: 50%;
                 }
             }
         }
         .buttonOrganizer {
-            margin-top: 5%;
+            margin-top: 3%;
             .buttonCombo--style {
                 @include font("patron", 1.3em, bold, var(--colorSecondary));
             }
@@ -519,12 +525,12 @@ li {
             }
         }
         .contDisplay {
-            margin-top: 6%;
-            height: 460px;
+            margin-top: 4%;
+            padding: 2% 3% 4% 3%;
             .contDisplay--Article {
-                font-size: 1.6em;
+                font-size: 1.5em;
                 .contDisplay__title {
-                    @include font("consola", 2.2em, bolder, #ff0092);
+                    @include font("consola", 2.1em, bolder, #ff0092);
                 }
             }
         }
@@ -533,7 +539,7 @@ li {
                 margin-top: 2%;
                 margin-bottom: 3%;
                 .contFooter__comnbo--img {
-                    width: 55%;
+                    width: 45%;
                 }
             }
         }
@@ -645,34 +651,44 @@ li {
     .contB {
         nav {
             .contB__NAV__sideA {
-                margin-top: 8%;
+                margin-top: 4%;
                 .contB__NAV__sideA--title {
-                    @include font("patron", 2em, bolder, var(--colorSecondary));
+                    @include font("patron", 2.5em, bolder, var(--colorSecondary));
                 }
             }
             .contB__NAV__sideB {
-                margin-top: 8%;
+                margin-top: 4%;
                 .contB__NAV__sideB--img {
-                    width: 30%;
+                    width: 40%;
                 }
             }
         }
         .buttonOrganizer {
+            margin-top: 3%;
             .buttonCombo--style {
-                @include font("patron", 1.4em, bold, var(--colorSecondary));
+                @include font("patron", 1.5em, bold, var(--colorSecondary));
             }
             .buttonCombo--styleSelected {
-                transform: scale(1.15);
-                @include font("patron", 1.6em, bolder, var(--colorSecondary));
+                padding: 0.4em;
+                @include font("patron", 1.7em, bolder, var(--colorSecondary));
             }
         }
         .contDisplay {
-            @include font("consola", 1.2em, bolder, --colorPrimary);
-            height: 500px;
+            margin-top: 4%;
+            height: 460px;
+            .contDisplay--Article {
+                font-size: 1.6em;
+                .contDisplay__title {
+                    @include font("consola", 2.2em, bolder, #ff0092);
+                }
+            }
         }
         .contFooter {
             .contFooter__comnbo a {
+                margin-top: 2%;
+                margin-bottom: 3%;
                 .contFooter__comnbo--img {
+                    width: 45%;
                 }
             }
         }
