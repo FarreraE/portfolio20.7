@@ -1,5 +1,5 @@
 var contactHome = document.getElementById("contactHome");
-var contactMenu = document.getElementById("contactHome2");
+var contactHome2 = document.getElementById("contactHome2");
 var buttonCombo1 = document.getElementById("buttonCombo1");
 var buttonCombo2 = document.getElementById("buttonCombo2");
 var buttonCombo3 = document.getElementById("buttonCombo3");
@@ -71,14 +71,12 @@ function blackBg() {
 }
 
 
-
-//menuSU.addEventListener("click", function () { menuDisplay() });
-//menuSUP.addEventListener("click", function () { menuDisplay() });
-//homeMenu2.addEventListener("click", function () { menuDisplayP() });
-//menuTV.addEventListener("click", function () { menuHide() });
+contactHome.addEventListener("click", function () { menuDisplay() });
+contactHome2.addEventListener("click", function () { menuDisplay() });
+menuTV.addEventListener("click", function () { menuHide() });
 
 function menuDisplay() {
-    document.getElementById("contA").style.display = "none";
+   // document.getElementById("contA").style.display = "none";
     document.getElementById("contB").style.display = "none";
     document.getElementById("contC").style.display = "none";
     document.getElementById("contD").style.display = "flex";
@@ -86,10 +84,10 @@ function menuDisplay() {
 
 }
 function menuHide() {
-    document.getElementById("contA").style.display = "flex";
-    document.getElementById("contB").style.display = "flex";
-    document.getElementById("contC").style.display = "flex";
+   // document.getElementById("contA").style.display = "flex";
+    document.getElementById("contB").style.display = "block";
+    document.getElementById("contC").style.display = "block";
     document.getElementById("contD").style.display = "none";
-    document.getElementById("footer").style.display = "grid";
+    document.getElementById("footer").style.display = "block";
 }
 

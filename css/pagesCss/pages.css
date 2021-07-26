@@ -17,7 +17,6 @@
 
 body {
   background-color: #5d5c5c;
-  padding: 0.8%;
 }
 
 .backgroundBody {
@@ -193,7 +192,7 @@ header .nav .nav-link:hover {
   margin-top: 8%;
   color: #f2f2f2;
   opacity: 0.4;
-  font-size: 0.6em;
+  font-size: 0.7em;
   font-family: "patron", cursive;
 }
 

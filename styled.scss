@@ -208,6 +208,7 @@ li {
     height: 100vh;
     background-color: #0000cd;
     @include flex(column, space-around);
+    display: none;
     .menuImg {
         opacity: 0.8;
     }
