@@ -250,6 +250,8 @@ li {
 .contB .buttonOrganizer .buttonCombo {
   width: 100%;
   height: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -276,9 +278,10 @@ li {
 }
 
 .contB .buttonOrganizer .buttonCombo--styleSelected {
-  border: var(--colorPrimary) solid 3px;
   border-radius: 4px;
+  border: black solid 1px;
   background-color: var(--colorPrimary);
+  padding: 0.1em;
   font-family: "patron";
   font-size: 1em;
   font-weight: bolder;
@@ -371,16 +374,12 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .contB .contFooter .contFooter__comnbo a .contFooter__comnbo--img {
   width: 60%;
-}
-
-.contB .contFooter .contFooter__comnbo a .contFooter__comnbo--img:hover {
-  /* @include animation(backgroundTV, 1s, alternate, infinite, 0);*/
 }
 
 /*-----------------------------------------------------------------contB*/
@@ -982,20 +981,10 @@ li {
   }
   .contB nav .contB__NAV__sideA .contB__NAV__sideA--title {
     font-family: "patron";
-    font-size: 1.8em;
+    font-size: 2.3em;
     font-weight: bolder;
     text-decoration: none;
     color: var(--colorSecondary);
-    -webkit-animation-name: glitchText;
-            animation-name: glitchText;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-            animation-direction: alternate;
-    -webkit-animation-delay: 2s;
-            animation-delay: 2s;
   }
   .contB nav .contB__NAV__sideB {
     margin-top: 8%;
@@ -1014,102 +1003,33 @@ li {
     color: var(--colorSecondary);
   }
   .contB .buttonOrganizer .buttonCombo--styleSelected {
-    border: var(--colorPrimary) solid 3px;
-    border-radius: 4px;
-    background-color: var(--colorPrimary);
+    padding: 0.2em;
     font-family: "patron";
     font-size: 1.3em;
     font-weight: bolder;
     text-decoration: none;
     color: var(--colorSecondary);
-    -webkit-animation-name: glitchBox;
-            animation-name: glitchBox;
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-            animation-direction: alternate;
-    -webkit-animation-delay: 0;
-            animation-delay: 0;
   }
   .contB .contDisplay {
     margin-top: 6%;
-    height: 425px;
-    border-top: 2px solid #ff0092;
-    border-bottom: 2px solid #ff0092;
+    height: 440px;
   }
   .contB .contDisplay .contDisplay--Article {
     font-size: 1.3em;
   }
   .contB .contDisplay .contDisplay--Article .contDisplay__title {
-    margin-top: 2%;
     font-family: "consola";
     font-size: 2em;
     font-weight: bolder;
     text-decoration: none;
     color: #ff0092;
   }
-  .contB .contFooter {
-    margin: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    width: 90%;
-  }
-  .contB .contFooter .contFooter__comnbo {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-animation-name: glitchText;
-            animation-name: glitchText;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-            animation-direction: alternate;
-    -webkit-animation-delay: 2s;
-            animation-delay: 2s;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 100%;
-    display: none;
-  }
   .contB .contFooter .contFooter__comnbo a {
     margin-top: 2%;
     margin-bottom: 3%;
-    width: 25%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
   }
   .contB .contFooter .contFooter__comnbo a .contFooter__comnbo--img {
     width: 55%;
-  }
-  .contB .contFooter .contFooter__comnbo a .contFooter__comnbo--img:hover {
-    /* @include animation(backgroundTV, 1s, alternate, infinite, 0);*/
   }
   .contC nav .contC__NAV__sideA {
     margin-top: 3%;
@@ -1219,48 +1139,59 @@ li {
     color: var(--colorPrimary);
   }
   .contB nav .contB__NAV__sideA {
-    margin-top: 5%;
+    margin-top: 6%;
   }
   .contB nav .contB__NAV__sideA .contB__NAV__sideA--title {
     font-family: "patron";
-    font-size: 1.8em;
+    font-size: 2.3em;
     font-weight: bolder;
     text-decoration: none;
     color: var(--colorSecondary);
   }
   .contB nav .contB__NAV__sideB {
-    margin-top: 5%;
+    margin-top: 6%;
   }
   .contB nav .contB__NAV__sideB .contB__NAV__sideB--img {
-    width: 40%;
+    width: 55%;
   }
   .contB .buttonOrganizer {
-    margin-top: 3%;
+    margin-top: 5%;
   }
   .contB .buttonOrganizer .buttonCombo--style {
     font-family: "patron";
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: bold;
     text-decoration: none;
     color: var(--colorSecondary);
   }
   .contB .buttonOrganizer .buttonCombo--styleSelected {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
+    padding: 0.4em;
     font-family: "patron";
-    font-size: 1.4em;
+    font-size: 1.5em;
     font-weight: bolder;
     text-decoration: none;
     color: var(--colorSecondary);
   }
   .contB .contDisplay {
-    margin-top: 2%;
-    border: #a3006d solid 5px;
-    height: 450px;
-    padding: 2%;
+    margin-top: 6%;
+    height: 460px;
   }
-  .contB .contFooter {
-    margin-top: 1%;
+  .contB .contDisplay .contDisplay--Article {
+    font-size: 1.6em;
+  }
+  .contB .contDisplay .contDisplay--Article .contDisplay__title {
+    font-family: "consola";
+    font-size: 2.2em;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #ff0092;
+  }
+  .contB .contFooter .contFooter__comnbo a {
+    margin-top: 2%;
+    margin-bottom: 3%;
+  }
+  .contB .contFooter .contFooter__comnbo a .contFooter__comnbo--img {
+    width: 55%;
   }
   .contC {
     background-image: url("/images/home/tverror5.jpg");

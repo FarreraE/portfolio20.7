@@ -4,7 +4,7 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-section{
+section {
     height: 100vh;
 }
 
@@ -138,6 +138,7 @@ li {
         .buttonCombo {
             width: 100%;
             height: 100%;
+            flex-wrap: wrap;
             @include flex(row, space-around);
         }
         .buttonCombo--style {
@@ -147,9 +148,10 @@ li {
             border: none;
         }
         .buttonCombo--styleSelected {
-            border: var(--colorPrimary) solid 3px;
             border-radius: 4px;
+            border: black solid 1px;
             background-color: var(--colorPrimary);
+            padding: 0.1em;
             @include font("patron", 1em, bolder, var(--colorSecondary));
             @include animation(glitchBox, 3s, alternate, infinite, 0);
         }
@@ -162,13 +164,13 @@ li {
         @include font("consola", 0.9em, bolder, white);
         width: 90%;
         height: 400px;
-        border-top:2px solid #ff0092;
-        border-bottom:2px solid #ff0092;
+        border-top: 2px solid #ff0092;
+        border-bottom: 2px solid #ff0092;
         .contDisplay--Article {
             display: none;
             font-family: "Baloo Chettan 2", cursive;
             font-size: 1.1em;
-            .contDisplay__title {      
+            .contDisplay__title {
                 margin-top: 2%;
                 @include font("consola", 1.8em, bolder, #ff0092);
             }
@@ -190,12 +192,9 @@ li {
             margin-bottom: 3%;
             width: 25%;
             @include flex(row, center);
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
             .contFooter__comnbo--img {
                 width: 60%;
-            }
-            .contFooter__comnbo--img:hover {
-                /* @include animation(backgroundTV, 1s, alternate, infinite, 0);*/
             }
         }
     }
@@ -366,76 +365,51 @@ li {
             }
         }
     }
-  .contB {
-    nav {
-        .contB__NAV__sideA {
-            margin-top: 8%;
-            .contB__NAV__sideA--title {
-                @include font("patron", 1.8em, bolder, var(--colorSecondary));
-                @include animation(glitchText, 2s, alternate, infinite, 2s);
+    .contB {
+        nav {
+            .contB__NAV__sideA {
+                margin-top: 8%;
+                .contB__NAV__sideA--title {
+                    @include font("patron", 2.3em, bolder, var(--colorSecondary));
+                }
+            }
+            .contB__NAV__sideB {
+                margin-top: 8%;
+                .contB__NAV__sideB--img {
+                    width: 55%;
+                }
             }
         }
-        .contB__NAV__sideB {
-            margin-top: 8%;
-            .contB__NAV__sideB--img {
-                width: 55%;
+        .buttonOrganizer {
+            margin-top: 6%;
+            .buttonCombo--style {
+                @include font("patron", 1.1em, bold, var(--colorSecondary));
+            }
+            .buttonCombo--styleSelected {
+                padding: 0.2em;
+                @include font("patron", 1.3em, bolder, var(--colorSecondary));
             }
         }
-    }
-    .buttonOrganizer {
-        margin-top: 6%;
-        .buttonCombo--style {
-            @include font("patron", 1.1em, bold, var(--colorSecondary));
-    
+        .contDisplay {
+            margin-top: 6%;
+            height: 440px;
+            .contDisplay--Article {
+                font-size: 1.3em;
+                .contDisplay__title {
+                    @include font("consola", 2em, bolder, #ff0092);
+                }
+            }
         }
-        .buttonCombo--styleSelected {
-            border: var(--colorPrimary) solid 3px;
-            border-radius: 4px;
-            background-color: var(--colorPrimary);
-            @include font("patron", 1.3em, bolder, var(--colorSecondary));
-            @include animation(glitchBox, 3s, alternate, infinite, 0);
-        }
-    }
-    .contDisplay {
-        margin-top: 6%;
-        height: 425px;
-        border-top:2px solid #ff0092;
-        border-bottom:2px solid #ff0092;
-        .contDisplay--Article {
-            font-size: 1.3em;
-            .contDisplay__title {      
+        .contFooter {
+            .contFooter__comnbo a {
                 margin-top: 2%;
-                @include font("consola", 2em, bolder, #ff0092);
+                margin-bottom: 3%;
+                .contFooter__comnbo--img {
+                    width: 55%;
+                }
             }
         }
     }
-    .contFooter {
-        margin: auto;
-        margin-top: 5%;
-        margin-bottom: 5%;
-        width: 90%;
-        .contFooter__comnbo {
-            flex-wrap: wrap;
-            @include animation(glitchText, 2s, alternate, infinite, 2s);
-            @include flex(row, space-between);
-            width: 100%;
-            display: none;
-        }
-        .contFooter__comnbo a {
-            margin-top: 2%;
-            margin-bottom: 3%;
-            width: 25%;
-            @include flex(row, center);
-            flex-wrap: nowrap;
-            .contFooter__comnbo--img {
-                width: 55%;
-            }
-            .contFooter__comnbo--img:hover {
-                /* @include animation(backgroundTV, 1s, alternate, infinite, 0);*/
-            }
-        }
-    }
-}
     .contC {
         nav {
             .contC__NAV__sideA {
@@ -522,38 +496,49 @@ li {
     .contB {
         nav {
             .contB__NAV__sideA {
-                margin-top: 5%;
+                margin-top: 6%;
                 .contB__NAV__sideA--title {
-                    @include font("patron", 1.8em, bolder, var(--colorSecondary));
+                    @include font("patron", 2.3em, bolder, var(--colorSecondary));
                 }
             }
             .contB__NAV__sideB {
-                margin-top: 5%;
+                margin-top: 6%;
                 .contB__NAV__sideB--img {
-                    width: 40%;
+                    width: 55%;
                 }
             }
         }
         .buttonOrganizer {
-            margin-top: 3%;
+            margin-top: 5%;
             .buttonCombo--style {
-                @include font("patron", 1.2em, bold, var(--colorSecondary));
+                @include font("patron", 1.3em, bold, var(--colorSecondary));
             }
             .buttonCombo--styleSelected {
-                transform: scale(1.05);
-                @include font("patron", 1.4em, bolder, var(--colorSecondary));
+                padding: 0.4em;
+                @include font("patron", 1.5em, bolder, var(--colorSecondary));
             }
         }
         .contDisplay {
-            margin-top: 2%;
-            border: #a3006d solid 5px;
-            height: 450px;
-            padding: 2%;
+            margin-top: 6%;
+            height: 460px;
+            .contDisplay--Article {
+                font-size: 1.6em;
+                .contDisplay__title {
+                    @include font("consola", 2.2em, bolder, #ff0092);
+                }
+            }
         }
         .contFooter {
-            margin-top: 1%;
+            .contFooter__comnbo a {
+                margin-top: 2%;
+                margin-bottom: 3%;
+                .contFooter__comnbo--img {
+                    width: 55%;
+                }
+            }
         }
     }
+
     .contC {
         background-image: url("/images/home/tverror5.jpg");
         background-size: 60%;
