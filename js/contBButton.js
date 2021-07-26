@@ -84,7 +84,7 @@ function menuDisplay() {
 
 }
 function menuHide() {
-   //document.getElementById("contA").style.display = "flex";
+    document.getElementById("contA").style.display = "flex";
     document.getElementById("contB").style.display = "block";
     document.getElementById("contC").style.display = "block";
     document.getElementById("contD").style.display = "none";

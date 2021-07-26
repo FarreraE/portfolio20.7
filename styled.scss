@@ -56,12 +56,9 @@ h1 {
     @include animation(glitchText, 2s, alternate, infinite, 3s);
 }
 h5 {
-    color: #f2f2f2;
-    font-family: "patron", cursive;
-    font-size: 1.2em;
-    font-weight: bold;
     text-align: center;
     opacity: 0.2;
+    @include font("patron", 1.2em, bold, var(--colorSecondary));
 }
 a,
 ul,
@@ -78,11 +75,11 @@ li {
     @include animation(backgroundTV, 2s, alternate, 2, 0);
     background-image: url("images/home/tverror3.jpg");
     @include flex(column, space-around);
-    display: none;
     .contA__image--logo {
         width: 80%;
         position: absolute;
-        top: 200px; left: 45px;
+        top: 200px;
+        left: 45px;
     }
     .home__ul {
         margin-top: 60%;
@@ -94,7 +91,8 @@ li {
                 letter-spacing: 0.1em;
                 @include animation(glitchText, 2s, alternate, infinite, 3s);
                 @include font("patron", 1.5em, bold, var(--colorSecondary));
-            }  .home--linkA:hover {
+            }
+            .home--linkA:hover {
                 @include font("patron", 1.5em, bold, var(--colorPrimary));
             }
         }
@@ -110,7 +108,7 @@ li {
 /*-----------------------------------------------------------------contA*/
 /*-----------------------------------------------------------------contB*/
 .contB {
-    background-image: url("images/home/tv7.gif");
+   // background-image: url("images/home/tv7.gif");
     background-repeat: no-repeat;
     background-size: cover;
     nav {
@@ -299,6 +297,7 @@ li {
 /*-----------------------------------------------------------------FOOTER*/
 .footer {
     margin-top: 8%;
+    margin-bottom: 10%;
     .footerA {
         .footer__logo {
             width: 40%;
@@ -336,11 +335,15 @@ li {
     h1 {
         font-size: 2.5em;
     }
+    h5 {
+        @include font("patron", 1.8em, bold, var(--colorSecondary));
+    }
     .contA {
         @include animation(backgroundTV, 2s, alternate, 2, 0);
         .contA__image--logo {
             width: 80%;
-            top: 150px; left: 80px;
+            top: 150px;
+            left: 80px;
         }
         .home__ul {
             margin-top: 40%;
@@ -348,9 +351,10 @@ li {
                 margin-top: 1%;
                 .home--linkA {
                     letter-spacing: 0.2em;
-                    @include font("patron", 2.0em, bold, var(--colorSecondary));
-                }.home--linkA:hover {
-                    @include font("patron", 2.0em, bold, var(--colorPrimary));
+                    @include font("patron", 2em, bold, var(--colorSecondary));
+                }
+                .home--linkA:hover {
+                    @include font("patron", 2em, bold, var(--colorPrimary));
                 }
             }
         }
@@ -455,11 +459,15 @@ li {
     h1 {
         font-size: 3em;
     }
+    h5 {
+        @include font("patron", 1.6em, bold, var(--colorSecondary));
+    }
     .contA {
         @include animation(backgroundTV, 2s, alternate, 2, 0);
         .contA__image--logo {
             width: 70%;
-            top: 150px; left: 120px;
+            top: 150px;
+            left: 120px;
         }
         .home__ul {
             margin-top: 40%;
@@ -468,12 +476,14 @@ li {
                 .home--linkA {
                     letter-spacing: 0.2em;
                     @include font("patron", 2.5em, bold, var(--colorSecondary));
-                }.home--linkA:hover {
+                }
+                .home--linkA:hover {
                     @include font("patron", 2.5em, bold, var(--colorPrimary));
                 }
             }
         }
-    }.contB {
+    }
+    .contB {
         nav {
             .contB__NAV__sideA {
                 margin-top: 5%;
@@ -587,11 +597,15 @@ li {
     h1 {
         font-size: 3.5em;
     }
+    h5 {
+        @include font("patron", 2.2em, bold, var(--colorSecondary));
+    }
     .contA {
         @include animation(backgroundTV, 2s, alternate, 2, 0);
         .contA__image--logo {
             width: 60%;
-            top: 150px; left: 210px;
+            top: 150px;
+            left: 210px;
         }
         .home__ul {
             margin-top: 40%;
@@ -600,7 +614,8 @@ li {
                 .home--linkA {
                     letter-spacing: 0.2em;
                     @include font("patron", 3em, bold, var(--colorSecondary));
-                }.home--linkA:hover {
+                }
+                .home--linkA:hover {
                     @include font("patron", 3em, bold, var(--colorPrimary));
                 }
             }
@@ -702,11 +717,15 @@ li {
     h1 {
         font-size: 5em;
     }
+    h5 {
+        @include font("patron", 3em, bold, var(--colorSecondary));
+    }
     .contA {
         @include animation(backgroundTV, 2s, alternate, 2, 0);
         .contA__image--logo {
             width: 50%;
-            top: 150px; left: 460px;
+            top: 150px;
+            left: 460px;
         }
         .home__ul {
             margin-top: 20%;
@@ -715,12 +734,14 @@ li {
                 .home--linkA {
                     letter-spacing: 0.2em;
                     @include font("patron", 3.5em, bold, var(--colorSecondary));
-                }.home--linkA:hover {
+                }
+                .home--linkA:hover {
                     @include font("patron", 3.5em, bold, var(--colorPrimary));
                 }
             }
         }
-    }.contB {
+    }
+    .contB {
         nav {
             .contB__NAV__sideA {
                 .contB__NAV__sideA--title {
@@ -744,10 +765,15 @@ li {
         }
         .contDisplay {
             width: 80%;
-            @include font("consola", 1.3em, bolder, --colorPrimary);
+            @include font("consola", 1.3em, bolder, white);
+            
+            background-color: black;
+            border: none;
+
             height: 550px;
         }
         .contFooter {
+
             .contFooter__comnbo a {
                 .contFooter__comnbo--img {
                     width: 35%;
@@ -765,6 +791,18 @@ li {
             .contC__NAV__sideB {
                 .contC__NAV__sideB--img {
                     width: 25%;
+                }
+            }
+        }.mainConteinerC {
+            .contDisplay {
+                height: 550px;
+            }
+            .contFooter {
+                .contFooter__combo {
+                    margin-top: 1%;
+                    .contFooter__comnbo--img {
+                        width: 23%;
+                    }
                 }
             }
         }

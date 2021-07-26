@@ -50,12 +50,13 @@ h1 {
 }
 
 h5 {
-  color: #f2f2f2;
-  font-family: "patron", cursive;
-  font-size: 1.2em;
-  font-weight: bold;
   text-align: center;
   opacity: 0.2;
+  font-family: "patron";
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--colorSecondary);
 }
 
 a,
@@ -94,7 +95,6 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: none;
 }
 
 .contA .contA__image--logo {
@@ -190,7 +190,6 @@ li {
 /*-----------------------------------------------------------------contA*/
 /*-----------------------------------------------------------------contB*/
 .contB {
-  background-image: url("images/home/tv7.gif");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -568,6 +567,7 @@ li {
 /*-----------------------------------------------------------------FOOTER*/
 .footer {
   margin-top: 8%;
+  margin-bottom: 10%;
 }
 
 .footer .footerA .footer__logo {
@@ -927,6 +927,13 @@ li {
   h1 {
     font-size: 2.5em;
   }
+  h5 {
+    font-family: "patron";
+    font-size: 1.8em;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--colorSecondary);
+  }
   .contA {
     -webkit-animation-name: backgroundTV;
             animation-name: backgroundTV;
@@ -1077,6 +1084,13 @@ li {
 @media all and (min-width: 768px) {
   h1 {
     font-size: 3em;
+  }
+  h5 {
+    font-family: "patron";
+    font-size: 1.6em;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--colorSecondary);
   }
   .contA {
     -webkit-animation-name: backgroundTV;
@@ -1241,6 +1255,13 @@ li {
   h1 {
     font-size: 3.5em;
   }
+  h5 {
+    font-family: "patron";
+    font-size: 2.2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--colorSecondary);
+  }
   .contA {
     -webkit-animation-name: backgroundTV;
             animation-name: backgroundTV;
@@ -1385,6 +1406,13 @@ li {
   h1 {
     font-size: 5em;
   }
+  h5 {
+    font-family: "patron";
+    font-size: 3em;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--colorSecondary);
+  }
   .contA {
     -webkit-animation-name: backgroundTV;
             animation-name: backgroundTV;
@@ -1455,7 +1483,9 @@ li {
     font-size: 1.3em;
     font-weight: bolder;
     text-decoration: none;
-    color: --colorPrimary;
+    color: white;
+    background-color: black;
+    border: none;
     height: 550px;
   }
   .contB .contFooter .contFooter__comnbo a .contFooter__comnbo--img {
@@ -1470,6 +1500,15 @@ li {
   }
   .contC nav .contC__NAV__sideB .contC__NAV__sideB--img {
     width: 25%;
+  }
+  .contC .mainConteinerC .contDisplay {
+    height: 550px;
+  }
+  .contC .mainConteinerC .contFooter .contFooter__combo {
+    margin-top: 1%;
+  }
+  .contC .mainConteinerC .contFooter .contFooter__combo .contFooter__comnbo--img {
+    width: 23%;
   }
   .contD {
     padding: 5%;
