@@ -152,7 +152,7 @@
     .mainConteinerC {
         width: 100%;
         margin-top: 8%;
-        .contDisplay {
+        .contDisplay { 
             width: 90%;
             height: 300px;
             margin: 0 auto;
@@ -164,13 +164,19 @@
             background-attachment: fixed;
             background-position: center;
             @include flex(column,center);
-            .mainConteinerCTitle{
+           
+            .iframeC{
+                border-radius: 15px;
+                width: 100%;
+                height: 100%;
+            }
+         /*   .mainConteinerCTitle{
                 @include font("patron", 2em, bolder,#000);
                 @include animation(glitchText, 2s, alternate, infinite, 3s);
             }
             .mainConteinerCText{
                 @include font("patron", 1.5em, bolder,yellow);
-            }
+            }*/
         }
         .contFooter {
             width: 100%;
