@@ -1,5 +1,8 @@
 var contactHome = document.getElementById("contactHome");
+var contactHomeUL = document.getElementById("contactHomeUL");
+var contactFooter = document.getElementById("contactFooter");
 var contactHome2 = document.getElementById("contactHome2");
+var contactMenu = document.getElementById("contactMenu");
 var buttonCombo1 = document.getElementById("buttonCombo1");
 var buttonCombo2 = document.getElementById("buttonCombo2");
 var buttonCombo3 = document.getElementById("buttonCombo3");
@@ -11,12 +14,12 @@ buttonCombo3.addEventListener("click", function () { btnSwitch(2) });
 buttonCombo4.addEventListener("click", function () { btnSwitch(3) });
 contactHome.addEventListener("click", function () { btnSwitch(3) });
 contactMenu.addEventListener("click", function () { btnSwitch(3) });
+contactHomeUL.addEventListener("click", function () { btnSwitch(3) });
+contactFooter.addEventListener("click", function () { btnSwitch(3) });
 
 buttonCombo1.className = "buttonCombo--styleSelected";
 document.getElementById("contB__contDisplay1").style.display = "block";
 document.getElementById("contFooter__comnboA").style.display = "flex";
-
-
 
 function btnSwitch(option) {
     buttonCombo1.className = "buttonCombo--style";
@@ -89,5 +92,6 @@ function menuHide() {
     document.getElementById("contC").style.display = "block";
     document.getElementById("contD").style.display = "none";
     document.getElementById("footer").style.display = "block";
+    btnSwitch(3);
 }
 

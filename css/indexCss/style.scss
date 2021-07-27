@@ -36,6 +36,7 @@
     animation-iteration-count: $infinite;
     animation-direction: $direction;
     animation-delay: $delay;
+    transition-timing-function: ease-in-out;
 }
 @mixin font($name, $size, $weight, $color) {
     font-family: $name;

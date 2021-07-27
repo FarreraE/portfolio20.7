@@ -3,7 +3,7 @@
 .contA {
     height: 100vh;
     background-repeat: no-repeat;
-    background-attachment: cover;
+    background-attachment: fixed;
 
     @include animation(backgroundTV, 2s, alternate, 2, 0);
     background-image: url("../../images/home/tverror3.jpg");
@@ -12,6 +12,7 @@
         width: 80%;
         .contA__image--logo {
             width: 80%;
+            
         }
     }
     .home__ul {
@@ -26,16 +27,9 @@
                 @include font("patron", 1.5em, bold, var(--colorSecondary));
             }
             .home--linkA:hover {
-                @include font("patron", 1.5em, bold, rgb(111, 0, 255));
+                @include font("patron", 1.5em, bold,var(--colorSecondary));
             }
         }
-    }
-    #logoBlue {
-        @include animation(logoBlue, 5s, alternate, infinite, 0);
-    }
-
-    #logoRed {
-        @include animation(logoRed, 5s, alternate, infinite, 0);
     }
 }
 /*-----------------------------------------------------------------contA*/
@@ -169,6 +163,14 @@
             background-size: 100%;
             background-attachment: fixed;
             background-position: center;
+            @include flex(column,center);
+            .mainConteinerCTitle{
+                @include font("patron", 2.5em, bolder,#000);
+                @include animation(glitchText, 2s, alternate, infinite, 3s);
+            }
+            .mainConteinerCText{
+                @include font("patron", 1.5em, bolder, yellow);
+            }
         }
         .contFooter {
             width: 100%;

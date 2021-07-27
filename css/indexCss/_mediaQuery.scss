@@ -6,14 +6,13 @@
         @include font("patron", 1.8em, bold, var(--colorSecondary));
     }
     .contA {
-        @include animation(backgroundTV, 2s, alternate, 2, 0);
-        .contA__image--logo {
-            width: 80%;
-            top: 150px;
-            left: 80px;
+        .contA__image {
+            width: 90%;
+            .contA__image--logo {
+                width: 80%;
+            }
         }
-        .home__ul {
-          
+        .home__ul {      
             li {
                 margin-top: 1%;
                 .home--linkA {
@@ -21,7 +20,7 @@
                     @include font("patron", 2em, bold, var(--colorSecondary));
                 }
                 .home--linkA:hover {
-                    @include font("patron", 2em, bold, var(--colorPrimary));
+                    @include font("patron", 2em, bold, var(--colorSecondary));
                 }
             }
         }
@@ -87,7 +86,7 @@
             .contC__NAV__sideB {
                 margin-top: 7%;
                 .contC__NAV__sideB--img {
-                    width: 50%;
+                    width: 65%;
                 }
             }
         }
@@ -141,11 +140,6 @@
     .contA {
         background-attachment: fixed;
         background-position: center;
-        .contA__image--logo {
-            width: 70%;
-            top: 150px;
-            left: 120px;
-        }
         .home__ul {
          
             li {
@@ -155,7 +149,7 @@
                     @include font("patron", 2.5em, bold, var(--colorSecondary));
                 }
                 .home--linkA:hover {
-                    @include font("patron", 2.5em, bold, var(--colorPrimary));
+                    @include font("patron", 2.5em, bold, var(--colorSecondary));
                 }
             }
         }
@@ -220,7 +214,7 @@
             .contC__NAV__sideB {
                 margin-top: 5%;
                 .contC__NAV__sideB--img {
-                    width: 40%;
+                    width: 50%;
                 }
             }
         }
@@ -291,12 +285,6 @@
     }
     .contA {
         background-position: center;
-        @include animation(backgroundTV, 2s, alternate, 2, 0);
-        .contA__image--logo {
-            width: 60%;
-            top: 150px;
-            left: 210px;
-        }
         .home__ul {
         
             li {
@@ -306,7 +294,7 @@
                     @include font("patron", 3em, bold, var(--colorSecondary));
                 }
                 .home--linkA:hover {
-                    @include font("patron", 3em, bold, var(--colorPrimary));
+                    @include font("patron", 3em, bold, var(--colorSecondary));
                 }
             }
         }
@@ -367,7 +355,7 @@
             .contC__NAV__sideB {
                 margin-top: 6%;
                 .contC__NAV__sideB--img {
-                    width: 30%;
+                    width: 40%;
                 }
             }
         }
@@ -422,11 +410,11 @@
         @include font("patron", 3em, bold, var(--colorSecondary));
     }
     .contA {
-        @include animation(backgroundTV, 2s, alternate, 2, 0);
-        .contA__image--logo {
-            width: 50%;
-            top: 150px;
-            left: 460px;
+        .contA__image {
+            width: 90%;
+            .contA__image--logo {
+                width: 60%;
+            }
         }
         .home__ul {
        
@@ -437,7 +425,7 @@
                     @include font("patron", 3.5em, bold, var(--colorSecondary));
                 }
                 .home--linkA:hover {
-                    @include font("patron", 3.5em, bold, var(--colorPrimary));
+                    @include font("patron", 3.5em, bold, var(--colorSecondary));
                 }
             }
         }
@@ -500,7 +488,7 @@
             .contC__NAV__sideB {
                 margin-top: 3%;
                 .contC__NAV__sideB--img {
-                    width: 25%;
+                    width: 30%;
                 }
             }
         }
