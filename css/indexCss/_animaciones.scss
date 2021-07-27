@@ -45,31 +45,7 @@
         transform: translateY(0px);
     }
 }
-@keyframes showUpH {
-    from {
-        color: red;
-        display: none;
-        opacity: 0;
-        transform: translateX(-80px);
-    }
-    to {
-        display: block;
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-@keyframes showUpHI {
-    from {
-        display: block;
-        opacity: 1;
-        transform: translateX(0px);
-    }
-    to {
-        display: none;
-        opacity: 0;
-        transform: translateX(80px);
-    }
-}
+
 
 @keyframes backgroundTV2 {
     from {
@@ -81,28 +57,6 @@
         opacity: 1;
         transform: scale(1);
         background-image: url("/images/home/tv4.gif");
-    }
-}
-
-@keyframes logoBlue {
-    from {
-        margin-top: -0.4%;
-        margin-left: -0.7%;
-    }
-    to {
-        margin-top: 0.4%;
-        margin-left: 0.7%;
-    }
-}
-
-@keyframes logoRed {
-    from {
-        margin-top: 0.4%;
-        margin-left: 0.7%;
-    }
-    to {
-        margin-top: -0.4%;
-        margin-left: -0.7%;
     }
 }
 
@@ -124,31 +78,11 @@
     }
 }
 
-@keyframes float {
-    0% {
-        transform: translatey(0px);
-    }
-    50% {
-        transform: translatey(-5px);
-    }
-    100% {
-        transform: translatey(0px);
-    }
-}
-
 @keyframes blackBackground {
     from {
+        background-color: #fff;
+    }
+    to {
         background-color: #000;
-    }
-    to {
-        background-color: #fff;
-    }
-}
-@keyframes blackBackgroundTV {
-    from {
-        background-color: #fff;
-    }
-    to {
-        background-image: url("../images/home/tv2.gif");
     }
 }

@@ -1,27 +1,26 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-html {
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-  }
-/* V A R I A B L E S */
-:root {
-    --colorPrimary: #000;
-    --colorSecondary: #ffffff;
-}
 
-/* F O N T S */
 @font-face {
-    font-family: "PersonalUse";
+    font-family: "lemon";
+    src: url("../Fuentes/LEMONMILK-Regular.otf");
+}
+@font-face {
+    font-family: "patron";
     src: url("../Fuentes/Patron\ -\ PersonalUse.otf");
 }
-
 @font-face {
     font-family: "consola";
     src: url("../Fuentes/CONSOLA.TTF");
+}
+/* V A R I A B L E S */
+:root {
+    --colorPrimary: #000;
+    --colorSecondary: #f2f2f2;
 }
 
 /* M I X I N */
@@ -45,9 +44,22 @@ html {
     text-decoration: none;
     color: $color;
 }
-
-/* G L O B A L  S T R U C T U R E */
-
+body {
+    background-color: #000;
+}
+h1 {
+    color: #f2f2f2;
+    font-family: "patron", cursive;
+    font-size: 1.8em;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    @include animation(glitchText, 2s, alternate, infinite, 3s);
+}
+h5 {
+    text-align: center;
+    opacity: 0.2;
+    @include font("patron", 1.2em, bold, var(--colorSecondary));
+}
 a,
 ul,
 li {
@@ -55,48 +67,6 @@ li {
     text-decoration: none;
     font-family: "consola";
 }
-section {
-    height: 100vh;
-    width: 100%;
-    @include flex(column, center);
-}
-nav {
-    h2{
-        @include animation(glitchText, 5s, alternate, infinite, 0);
-    }
-    /*background-color: gainsboro;*/
-    height: 10%;
-    width: 95%;
-    @include flex(row, space-between);
-    .menu--img {
-        width: 50%;
-    }
-}
-main {
-    /*background-color: indianred;*/
-    height: 60%;
-    width: 100%;
-    @include flex(row, center);
-}
-.contFooter {
-    height: 15%;}
-.contFooter__comnbo {
-    @include flex(row, space-between);
-    width: 80%;
-    height: 80%;
-    margin: 0 auto;
-    display: none;
-}
-.contFooter__comnbo a {
-    @include flex(row, center);
-    .contFooter__comnbo--img {
-        width: 80%;
-        margin: 0 auto;
-    }
-}
-@import "contA";
-@import "contB";
-@import "contC";
-@import "contD";
-@import "Footer";
+@import "contABC";
+@import "mediaQuery";
 @import "animaciones";

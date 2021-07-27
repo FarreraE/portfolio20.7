@@ -1,0 +1,267 @@
+
+/*-----------------------------------------------------------------contA*/
+.contA {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    @include animation(backgroundTV, 2s, alternate, 2, 0);
+    background-image: url("../../images/home/tverror3.jpg");
+    @include flex(column, center);
+    .contA__image {
+        width: 80%;
+        .contA__image--logo {
+            width: 80%;
+        }
+    }
+    .home__ul {
+        margin-top: 5%;
+        @include flex(column, space-around);
+        @include animation(showUp, 2s, alternate, 1, 2s);
+        li {
+            margin-top: 5%;
+            .home--linkA {
+                letter-spacing: 0.1em;
+                @include animation(glitchText, 2s, alternate, infinite, 3s);
+                @include font("consola", 1.5em, bold, var(--colorSecondary));
+            }
+            .home--linkA:hover {
+                @include font("consola", 1.5em, bold, rgb(111, 0, 255));
+            }
+        }
+    }
+    #logoBlue {
+        @include animation(logoBlue, 5s, alternate, infinite, 0);
+    }
+
+    #logoRed {
+        @include animation(logoRed, 5s, alternate, infinite, 0);
+    }
+}
+/*-----------------------------------------------------------------contA*/
+/*-----------------------------------------------------------------contB*/
+.contB {
+    background-repeat: no-repeat;
+    background-size: cover;
+    nav {
+        .contB__NAV__sideA {
+            margin-top: 8%;
+            .contB__NAV__sideA--title {
+                @include font("patron", 1.5em, bolder, var(--colorSecondary));
+                @include animation(glitchText, 2s, alternate, infinite, 2s);
+            }
+        }
+        .contB__NAV__sideB {
+            margin-top: 8%;
+            .contB__NAV__sideB--img {
+                width: 80%;
+            }
+        }
+    }
+    .buttonOrganizer {
+        margin-top: 8%;
+        border-radius: 4px;
+        background-color: var(--colorPrimary);
+        @include flex(column, space-around);
+        .buttonCombo {
+            width: 100%;
+            height: 100%;
+            flex-wrap: wrap;
+            @include flex(row, space-around);
+        }
+        .buttonCombo--style {
+            height: 100%;
+            background-color: var(--colorPrimary);
+            @include font("patron", 0.8em, bold, var(--colorSecondary));
+            border: none;
+        }
+        .buttonCombo--styleSelected {
+            border-radius: 0.2em;
+            border: 0.1em solid #ff0092;
+            background-color: var(--colorPrimary);
+            padding: 0.2em;
+            @include font("patron", 1em, bolder, var(--colorSecondary));
+            @include animation(glitchBox, 3s, alternate, infinite, 0);
+        }
+    }
+    .contDisplay {
+        margin: 0 auto;
+        margin-top: 8%;
+        padding: 5% 4% 8% 4%;
+        text-align: justify;
+        @include font("consola", 0.9em, bolder, white);
+        width: 90%;
+        border-radius: 0.5em;
+        border-top: 0.15em solid #ff0092;
+        border-bottom: 0.15em solid #ff0092;
+        @include animation(glitchBox, 6s, alternate, infinite, 0);
+        .contDisplay--Article {
+            display: none;
+            font-family: "Baloo Chettan 2", cursive;
+            font-size: 1.1em;
+            .contDisplay__title {
+                margin-top: 2%;
+                @include font("consola", 1.8em, bolder, #ff0092);
+            }
+        }
+    }
+    .contFooter {
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: 90%;
+        .contFooter__comnbo {
+            flex-wrap: wrap;
+            @include flex(row, space-between);
+            width: 100%;
+            display: none;
+        }
+        .contFooter__comnbo a {
+            margin-top: 2%;
+            margin-bottom: 3%;
+            width: 25%;
+            @include flex(row, center);
+            flex-wrap: wrap;
+            .contFooter__comnbo--img {
+                width: 60%;
+            }
+        }
+    }
+}
+/*-----------------------------------------------------------------contB*/
+/*-----------------------------------------------------------------contC*/
+.contC {
+    width: 100%;
+    font-family: "patron";
+    color: #f2f2f2;
+    background-image: url("../../images/home/tverror6.jpg");
+    background-size: contain;
+    background-attachment: fixed;
+    background-color: none;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    nav {
+        .contC__NAV__sideA {
+            margin-top: 8%;
+            .contC__NAV__sideA--title {
+                @include font("patron", 1.5em, bolder, var(--colorSecondary));
+                @include animation(glitchText, 2s, alternate, infinite, 2s);
+            }
+        }
+        .contC__NAV__sideB {
+            margin-top: 8%;
+            .contC__NAV__sideB--img {
+                width: 80%;
+            }
+        }
+    }
+    .mainConteinerC {
+        width: 100%;
+        margin-top: 8%;
+        .contDisplay {
+            width: 90%;
+            height: 300px;
+            margin: 0 auto;
+            border: #a3006d solid 3px;
+            border-radius: 20px;
+            background-image: url("../../images/home/ufo.gif");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        .contFooter {
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 10%;
+            background-color: black;
+            .contFooter__combo {
+                .contFooter__comnbo--img {
+                    margin: 3%;
+                    width: 40%;
+                }
+                .contFooter__comnbo--img:hover {
+                    @include animation(backgroundTV2, 1s, alternate, infinite, 0);
+                }
+            }
+        }
+    }
+}
+
+/*-----------------------------------------------------------------contC*/
+/*-----------------------------------------------------------------contD*/
+.contD {
+    height: 100vh;
+    background-color: #0000cd;
+    @include flex(column, space-around);
+    display: none;
+    .menuImg {
+        opacity: 0.8;
+    }
+    .containercontD--menu {
+        @include flex(column, space-around);
+        justify-content: left;
+        border: yellow solid 2px;
+        padding: 5%;
+        .contD--menuSelector {
+            @include flex(row, center);
+            width: 110%;
+            .selector {
+                transform: scale(0.3);
+            }
+            .contD--menuA {
+                width: 80%;
+                letter-spacing: 0.15em;
+                @include font(consola, 1.2em, bolder, #ffffff);
+            }
+        }
+        .contD--menuSelector:hover {
+            border: springgreen solid 2px;
+            width: 110%;
+            .contD--menuA:hover {
+                width: 80%;
+                @include font(consola, 1em, bolder, #ff0092);
+            }
+        }
+    }
+    .menuH3 {
+        @include font(consola, 1em, bolder, #ffffff);
+    }
+}
+/*-----------------------------------------------------------------contD*/
+/*-----------------------------------------------------------------FOOTER*/
+.footer {
+    margin-top: 8%;
+    margin-bottom: 10%;
+    .footerA {
+        .footer__logo {
+            width: 40%;
+            opacity: 0.2;
+            margin-bottom: 2%;
+        }
+    }
+    .footerB {
+        .footer_contact--img {
+            width: 15%;
+            margin-top: 2%;
+            opacity: 0.5;
+        }
+        .footer_contact--img:hover {
+            opacity: 1;
+        }
+    }
+    .footerC {
+        .nav-link {
+            margin-top: 8%;
+            color: #f2f2f2;
+            opacity: 0.4;
+            font-size: 0.8em;
+            font-family: "patron", cursive;
+            font-weight: bolder;
+        }
+        .nav-link:hover {
+            opacity: 1;
+        }
+    }
+}
+/*-----------------------------------------------------------------FOOTER*/
