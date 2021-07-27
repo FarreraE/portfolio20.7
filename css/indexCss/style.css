@@ -71,8 +71,7 @@ li {
 .contA {
   height: 100vh;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  background-attachment: cover;
   -webkit-animation-name: backgroundTV;
           animation-name: backgroundTV;
   -webkit-animation-duration: 2s;
@@ -149,7 +148,7 @@ li {
           animation-direction: alternate;
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
-  font-family: "consola";
+  font-family: "patron";
   font-size: 1.5em;
   font-weight: bold;
   text-decoration: none;
@@ -157,7 +156,7 @@ li {
 }
 
 .contA .home__ul li .home--linkA:hover {
-  font-family: "consola";
+  font-family: "patron";
   font-size: 1.5em;
   font-weight: bold;
   text-decoration: none;
@@ -961,6 +960,7 @@ li {
     color: var(--colorSecondary);
   }
   .contA {
+    background-position: center;
     -webkit-animation-name: backgroundTV;
             animation-name: backgroundTV;
     -webkit-animation-duration: 2s;

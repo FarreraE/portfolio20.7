@@ -3,8 +3,8 @@
 .contA {
     height: 100vh;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+    background-attachment: cover;
+
     @include animation(backgroundTV, 2s, alternate, 2, 0);
     background-image: url("../../images/home/tverror3.jpg");
     @include flex(column, center);
@@ -23,10 +23,10 @@
             .home--linkA {
                 letter-spacing: 0.1em;
                 @include animation(glitchText, 2s, alternate, infinite, 3s);
-                @include font("consola", 1.5em, bold, var(--colorSecondary));
+                @include font("patron", 1.5em, bold, var(--colorSecondary));
             }
             .home--linkA:hover {
-                @include font("consola", 1.5em, bold, rgb(111, 0, 255));
+                @include font("patron", 1.5em, bold, rgb(111, 0, 255));
             }
         }
     }

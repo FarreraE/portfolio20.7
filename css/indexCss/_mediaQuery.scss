@@ -290,6 +290,7 @@
         @include font("patron", 2.2em, bold, var(--colorSecondary));
     }
     .contA {
+        background-position: center;
         @include animation(backgroundTV, 2s, alternate, 2, 0);
         .contA__image--logo {
             width: 60%;
