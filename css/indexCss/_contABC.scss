@@ -165,11 +165,11 @@
             background-position: center;
             @include flex(column,center);
             .mainConteinerCTitle{
-                @include font("patron", 2.5em, bolder,#000);
+                @include font("patron", 2em, bolder,#000);
                 @include animation(glitchText, 2s, alternate, infinite, 3s);
             }
             .mainConteinerCText{
-                @include font("patron", 1.5em, bolder, yellow);
+                @include font("patron", 1.5em, bolder,yellow);
             }
         }
         .contFooter {
