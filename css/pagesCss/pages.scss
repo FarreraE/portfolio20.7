@@ -7,15 +7,18 @@
     font-family: "lemon";
     src: url("../Fuentes/LEMONMILK-Regular.otf");
 }
-@font-face {
-    font-family: "patron";
-    src: url("../Fuentes/Patron\ -\ PersonalUse.otf");
+
+:root {
+    --colorPrimary: #262525;
+    --colorSecondary: #f2f2f2;
+    --colorThird: #5d5c5c;
+    --colorVSTag: #24accd;
+    --colorVSClass: #80e0fd;
+    --colorVSQoutes: #ff7f00;
+    --colorVSComment: #40a529;
 }
 
 body {
-    background-color: #5d5c5c;
-}
-.backgroundBody {
     background-color: #262525;
 }
 h1 {
@@ -51,35 +54,55 @@ h5 {
     text-align: center;
     opacity: 0.2;
 }
+a{ text-decoration: none;
+    color: #f2f2f2;}
 header {
+    padding: 2%;
     .header__colA {
-        .header__logo {
-            margin-top: 10%;
-            opacity: 0.3;
+        margin-top: 1%;
+
+        .header__colAContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .header__colA--img {
+                transform: scale(0.9);
+            }
+
+            h1 {
+                font-size: 1.8em;
+                letter-spacing: 0.1em;
+                text-align: center;
+                font-family: "lemon";
         }
     }
+
     .header__colB {
-        font-size: 0.8em;
-        color: #f2f2f2;
-        opacity: 0.4;
-        text-align: right;
-        margin-top: 5%;
+        font-size: 1em;
+        text-align: center;
+        justify-content: center;
     }
-    .nav {
-        font-family: "lemon", cursive;
+
+    .header__nav {
         .nav-link {
-            color: #f2f2f2;
-            opacity: 0.4;
-            font-size: 0.8em;
-            letter-spacing: 0.1em;
-            font-weight: bold;
         }
+            text-decoration: none;
+            color: var(--colorSecondary);
+            font-size: 1em;
+            font-weight: bold;
+            opacity: 0.5;
+        }
+
         .nav-link:hover {
+            color: var(--colorSecondary);
             opacity: 1;
-            transform: scale(1.1);
         }
     }
 }
+
+
 .desLogLink {
     margin-top: 5%;
     .desLogLink__colA {
@@ -160,10 +183,12 @@ header {
             width: 15%;
             margin-top: 2%;
             opacity: 0.5;
+            transform:scale(0.5);
         }
         .footer_contact--img:hover {
             opacity: 1;
         }
+
     }.footerC{
         .nav-link {
             margin-top: 8%;
